@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="packStyles.css">
+    <title>Pack Your Bag</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Main "List" -->
+        <div class="main">
+          <h2 class="header">It's time to...</h2>
+          <h1 class="header"> Pack your Bag!</h1>
+          <p>Don't worry, we've got you covered!</p>
+          <h3>Let's start by giving your trip a name:</h3>
+          <input type='text' id="trip-name" placeholder="Trip Name" />
+          <button id="addTripName">Let's Go!</button>
+          <h3>Now, choose your vacation type:</h3>
+          <div class="vacation-type">
+            <div class="box">
+              <img class="img" src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4MTEzODEyNC1pbWFnZS1rd3Z5NTA3Ny5qcGc.jpg" alt="Beach Picture">
+              <button id="beach">Beach</button>
+            </div>
+            <div class="box">
+              <img class="img" src="https://i.brecorder.com/primary/2023/10/26180321822b51b.jpg" alt="City Picture">
+              <button id="city">City</button>
+            </div>
+            <div class="box">
+              <img class="img" src="https://www.exoticca.com/uk/magazine/wp-content/uploads/2021/06/matterhorn-BLOG-mountains.png" alt="Nature Picture">
+              <button id="nature">Nature</button>
+            </div>
+          </div>
+          <h2 id='h2-list'>On your trip <span id="trip"></span> we suggest you bring </h2>
+          <div class="my-list" id="my-list"></div>
+          <h4>What else do you want to bring?</h4>
+      
+          <input type='text' name="moreItems" id="inputText" placeholder="Enter an item you want to bring" />
+          <button id="addInput">Add my own item</button>
+        </div>
+      
+        <!-- Sidebar -->
+        <div class="sidebar">
+      
+          <!-- Curency Converter -->
+          <div class="converter">
+            <h2>Curency Converter</h2>
+            <p> from:
+              <select name="dropdownFrom" id="dropdownFrom" onChange="convertCurrency()">
+                <option value="usd">USD</option>
+                <option value="gbp">GBP</option>
+                <option value="eur">EURO</option>
+              </select>
+            </p>
+            <p> to:
+              <select name="dropdownTo" id="dropdownTo" onChange="convertCurrency()">
+                <option value="eur">EURO</option>
+                <option value="usd">USD</option>
+                <option value="gbp">GBP</option>
+              </select>
+            </p>
+            <p> Amount to convert: </p>
+            <input type="number" id="amount" placeholder="Enter amount" oninput="convertCurrency()">
+            <p>Amount to receive: <span id="toRecieve"></span></p>
+          </div>
+      
+          <!-- Destination Adviser -->
+          <div class="countryGenerator">
+            <h2>Need Some Inspiration?</h2>
+            <button onclick="suggestCountry()">Where to Travel</button>
+            <ul id="country-list">
+            </ul>
+          </div>
+      
+        </div> <!-- class="sidebar" closing tag -->
+      </div> <!-- class="container" closing tag -->
+    
+    <script t src="packScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Font for Header*/
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+/* Common Styles for the Document */
+body {
+  color: #544547;
+  font-family: helvetica, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  color: #8d6543;
+  font-family: Arial;
+}
+
+button {
+  background-color: #2a9d8f;
+  border: none;
+  color: white;
+  padding: 4px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input {
+  border-radius: 2px;
+}
+
+/* Structure Element Styles: */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 100px;
+}
+
+/* Main Styles */
+.main {
+  min-width: 60%;
+  padding: 30px;
+}
+
+/* Header Styles */
+.header {
+  font-family: Caveat;
+  text-align: center;
+}
+h1.header {
+  font-size: 50px;
+  margin: 0;
+  color: #2a9d8f;
+}
+h2.header {
+  font-size: 30px;
+  margin: -5px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 25%;
+  padding-top: 30px;
+  gap: 30px;
+}
+
+/* Vacation Type Styles */
+.vacation-type {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+}
+.img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.box button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+/* My List Styles */
+.my-list {
+  text-align: left;
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+/* Currency Converter Styles */
+.converter {
+  padding: 10px 30px;
+  border: solid #bab4b5;
+  border-radius: 10px;
+}
+#toRecieve {
+  color: #2a9d8f;
+  font-weight: 800;
+}
+
+/* Destination Adviser Styles */
+.countryGenerator {
+  padding: 10px 30px;
+  border: solid #bab4b5;
+  border-radius: 10px;
+}
+#country-list {
+  list-style-type: none;
+  padding-right: 15%;
+}

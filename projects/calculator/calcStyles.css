@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.calc{
+    height: 615px;
+    width: 400px;
+    border: solid 2px black;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(229, 226, 230);
+}
+
+.down {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.down button {
+    width: 190px;
+    background-color: rgb(221, 208, 234);
+}
+
+.display {
+    margin: 5px;
+    height: 15%;
+    width: 92%;
+    border: grey, 3px, solid;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(245, 248, 250);
+}
+
+
+.buttons {
+    display: flex;
+    padding: 5px;
+}
+
+#left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#right {
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+button {
+    height: 85px;
+    width: 87px;
+    border-radius: 5px;
+    background-color: rgb(243, 218, 218);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:lightgrey;
+}
+
+button:active {
+    background-color: rgb(68, 66, 66);
+}
+
+.operator {
+    background-color: bisque;
+}
+
+.number {
+    background-color: azure;
+}

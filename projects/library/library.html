@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libStyles.css">
+    <title>Library</title>
+</head>
+<body>  
+    <div class="container">
+        <button class="button open-modal">New Book</button>
+        <dialog class="modal" id="modal">  
+            <form class="form" method="dialog">
+                <label>Title:<input type="text" id="title"></label>
+                <label>Author:<input type="text" id="author"></label>
+                <label>Pages:<input type="number" id="pages"></label>
+                <label>Read:<input type="checkbox" id="read"></label>
+                <button class="button submit">Add New Book</button>
+                <button class="button close-modal">Close</button>
+            </form>  
+        </dialog>
+    </div>
+    <script src="libScript.js"></script>
+</body>
+</html>

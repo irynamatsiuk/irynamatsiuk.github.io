@@ -1,6 +1,6 @@
 
-import "./styles.css";
-import  createHomeTab  from "./home.js";
+// import "./styles.css";
+import  createHomeTab from "./home.js";
 import  createContactTab  from "./contact.js";
 import createMenuTab from "./menu.js";
 
@@ -26,4 +26,5 @@ document.querySelector("#menu-btn").addEventListener("click", (event) => {
     document.querySelector("#content").replaceChildren();
     createMenuTab()
 })
+
 

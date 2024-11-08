@@ -1,6 +1,5 @@
 import { saveToLS } from "./helper.js";
 
-
 export function addNewTask(projects, projectIndex, titleInput, dueDateInput, priorityInput, notesInput) {
     let newTask = new Task(titleInput, dueDateInput, priorityInput, notesInput);
     projects[projectIndex].tasks.push(newTask); 

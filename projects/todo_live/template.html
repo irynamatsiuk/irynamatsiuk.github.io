@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Get Shit Done</title>
+</head>
+<body>
+    <h1>Get <span>Sh</span>it Done.</h1>
+
+    <div id="menu-div">
+        <div id="project-div">
+            <div id="dropdown-div">
+                <label for="dropdown">Project:</label>
+                <select id="dropdown">
+                </select>
+                <button id="new-project-btn">New Project</button>
+            </div>    
+            <div class="new-project-div hidden">
+                <input type="text" id="project-name-input" placeholder="Enter Project's Name">
+                <button id="add-project-btn">Add New Project</button>
+            </div>
+        </div>
+
+        <div id="new-task-div">
+            <div class="button-div">
+                <button id="form-btn">New Task</button> 
+            </div>
+            <div id="form-div" class="hidden">
+                <form>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title">
+                    <label for="due-date">Due date:</label>
+                    <input type="date" id="due-date">
+                    <label for="priority">Priority:</label>
+                    <select id="priority">
+                        <option value="low">Low</option>
+                        <option value="mid">Mid</option>
+                        <option value="high">High</option>
+                    </select>
+                    <label for="notes">Notes:</label>
+                    <textarea id="notes"></textarea>
+                    <div id="submit-btn-div">
+                        <button type="submit" id="submit-btn">Add New Task</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="task-div">
+        <h3>Your Tasks:</h3>
+        <div id="no-tasks-div">
+            <p>Ooops, looks like this project hasn't any tasks</p>
+            <p class="small">If you want you can load few demo tasks</p>
+            <div class="button-div">
+                <button id="demo-btn">Load Demo Tasks</button>
+            </div>
+        </div>
+        <div id="task-list">
+            <ul id="new-ul">
+            </ul>
+        </div>
+    </div>
+
+    <!-- Template -->
+    <template id="task-li-template">
+        <li>
+            <div class="list-div">
+                <h4 class="li-heading"></h4>
+                <p>Due date is <span class="due-date-span"></span></p>
+                <button class="details-btn">Show Details</button> 
+                <div class="details hidden">
+                    <p>This task has a <span class="priority-span"></span> priority</p>
+                    <p>Notes: <span class="notes-span"></span></p>
+                </div>
+                <div class="task-manupulation">
+                <div class="checkbox-div">
+                    <p>Done: </p>
+                    <input type="checkbox" class="checkbox">
+                </div>
+                <button class="delete-task-btn">Delete</button>
+                </div>
+            </div>
+        </li>
+    </template>
+
+    <script src="index.js" type="module" defer></script>
+</body>
+</html>

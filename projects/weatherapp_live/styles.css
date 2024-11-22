@@ -1,0 +1,185 @@
+:root {
+  --blue-dark: rgb(54, 83, 99);
+  --blue: rgb(119, 171, 178);
+  --blue-light: rgb(184, 227, 250);
+  --blue-light-opacity: rgba(236, 241, 247, 0.4);
+  --white: rgb(236, 241, 247);
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--blue-dark);
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 6rem;
+  background-image: url(img/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg);
+  background-size: cover;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 100px 100px 1fr;
+  padding-bottom: 6rem;
+}
+
+h2 {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+}
+
+.search-div {
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 400px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem;
+}
+
+form div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.location {
+  border: none;
+  border-radius: 3rem;
+  width: 300px;
+  font-style: italic;
+  color: var(--blue-dark);
+  background-color: var(--white);
+  padding: 0.5rem 1rem;
+}
+
+#search {
+  border: none;
+  background: url(img/search.svg) no-repeat;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+
+.location:focus {
+  outline: solid 1.5px var(--blue-dark);
+}
+
+input[type="radio"] {
+  accent-color: var(--blue-dark);
+}
+
+.output {
+  grid-area: 3 / 2 / 4 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+#loading {
+  border: 16px solid var(--white);
+  border-top: 16px solid var(--blue);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  background: var(--blue-light-opacity);
+  border-radius: 3rem;
+  padding: 2rem;
+}
+
+#error-img {
+  content: url(img/sadcloud.png);
+  width: 200px;
+}
+
+.info {
+  min-width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background: var(--blue-light-opacity);
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+.temp-icon {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+#icon {
+  width: 50px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.min-max {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+
+#description {
+  font-style: italic;
+}
+
+footer {
+  grid-area: 2 / 1 / -1 / -1;
+  background-color: var(--blue-dark);
+  color: var(--blue-light);
+  padding: 1rem;
+}
+
+.footer {
+  font-size: 0.7rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: var(--blue);
+}

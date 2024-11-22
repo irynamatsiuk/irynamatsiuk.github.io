@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h2>Weather Check</h2>
+        <!-- Search -->
+        <div class="search-div">
+          <form>
+            <div>
+              <input
+                type="text"
+                class="location"
+                placeholder="Enter a location..."
+                required
+              />
+              <button type="submit" id="search"></button>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="units"
+                id="celsius"
+                value="metric"
+                checked
+              />
+              <label for="celsius">Celsius</label>
+              <input type="radio" name="units" id="fahrenheit" value="us" />
+              <label for="fahrenheit">Fahrenheit</label>
+            </div>
+          </form>
+        </div>
+        <div class="output">
+          <!-- Loading -->
+          <div id="loading" class="hidden"></div>
+          <!-- Error -->
+          <div class="error hidden">
+            <p>
+              Something went wrong <br />Please check location spelling or try
+              later
+            </p>
+            <div id="error-img"></div>
+          </div>
+          <!-- Weather Info -->
+          <div class="info hidden">
+            <h3 id="city"></h3>
+            <p id="current"></p>
+            <div class="temp-icon">
+              <h1 id="temp"><span id="temp-span"></span>°</h1>
+              <img id="icon" src="#" />
+            </div>
+            <p id="feel">Feels like <span id="feel-span"></span>°</p>
+            <div class="min-max">
+              <p id="max">Max <span id="max-span"></span>°</p>
+              <p id="min">Min <span id="min-span"></span>°</p>
+            </div>
+            <p id="description"></p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p class="footer">
+          No matter what the weather forecast says, <br />
+          there is no such thing as bad weather, only bad clothing
+        </p>
+        <p class="footer">
+          Photo by
+          <a
+            href="https://unsplash.com/@wirhabenzeit?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Dominik Schröder</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/white-clouds-during-daytime-FIKD9t5_5zQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { DateYear } from "./Date";
+import "../styles/Education.css";
 
 export function Education() {
   const [isPublished, setIsPublished] = useState(false);

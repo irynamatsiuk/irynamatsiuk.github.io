@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/GeneralInfo.css";
 
 export function GeneralInfo() {
   const [isPublished, setIsPublished] = useState(false);

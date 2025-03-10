@@ -1,0 +1,23 @@
+.experience-container {
+  height: 500px;
+}
+
+textarea {
+  grid-area: 4 / 3 / 6 / 6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+#period {
+  grid-area: 3 / 3 / 6 / 6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-date {
+  width: 96%;
+}
+.end-date {
+  width: 96%;
+}

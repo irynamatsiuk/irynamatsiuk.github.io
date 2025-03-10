@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { DateRange } from "./Date";
+import "../styles/Experience.css";
 
 export function Experience() {
   const [isPublished, setIsPublished] = useState(false);

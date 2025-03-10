@@ -2,9 +2,9 @@ import { useState } from "react";
 
 export function GeneralInfo() {
   const [isPublished, setIsPublished] = useState(false);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [name, setName] = useState("Homer Simpson");
+  const [email, setEmail] = useState("homer.simpson@springfield.com");
+  const [phone, setPhone] = useState("(555) 123-4567");
 
   return (
     <>

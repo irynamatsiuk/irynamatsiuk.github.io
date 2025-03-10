@@ -5,9 +5,9 @@ export function Education() {
   const [isPublished, setIsPublished] = useState(false);
   const [degree, setDegree] = useState({
     level: "HBO",
-    school: "",
-    title: "",
-    graduationYear: false,
+    school: "Springfield A&M University",
+    title: "Beer and Donuts Studies",
+    graduationYear: new Date(),
   });
   return (
     <div className="education-container">
@@ -28,7 +28,9 @@ export function Education() {
               onChange={(e) => setDegree({ ...degree, level: e.target.value })}
             >
               <option value="MBO">MBO - middle-level applied education</option>
-              <option value="HBO">HBO - higher professional education</option>
+              <option selected value="HBO">
+                HBO - higher professional education
+              </option>
               <option value="WO">WO - scientific education</option>
             </select>
             <label htmlFor="schoolName">School name:</label>

@@ -4,11 +4,12 @@ import { DateRange } from "./Date";
 export function Experience() {
   const [isPublished, setIsPublished] = useState(false);
   const [company, setCompany] = useState({
-    name: "",
-    position: "",
-    resposibilieties: "",
-    startDate: false,
-    endDate: false,
+    name: "Springfield Nuclear Power Plant",
+    position: "Safety Operations Manager",
+    resposibilieties:
+      "Oversaw nuclear safety protocols, managed staff and ensured plant compliance with safety regulations",
+    startDate: new Date(),
+    endDate: new Date(),
   });
 
   function formateDate(date) {

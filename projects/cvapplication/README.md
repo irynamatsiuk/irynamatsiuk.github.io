@@ -9,7 +9,7 @@
 A small application where users can input their information and generate a CV/résumé. A simple project to get started with React, it includes many of the basic concepts without a huge overhead of complexity.
 For demonstration purpose initial values were added to input fields (AI generated Homer Simpson information).
 
-Live version: [CV App]()
+Live: [CV App](https://imatsiuk-cvapplication.vercel.app/)
 
 #### Assignment:
 

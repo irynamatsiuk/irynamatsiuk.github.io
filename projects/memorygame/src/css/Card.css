@@ -1,0 +1,15 @@
+.card {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+}
+
+.card > p {
+  text-wrap: wrap;
+  text-align: center;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sharedStyles.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <title>Iryna Matsiuk</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="about">
+          <p>
+            These are the projects I have done during my learning path. <br />
+            Currently I am on the second part of The Odin Project - Full Stack
+            JavaScript, chapter - React. <br />
+          </p>
+        </div>
+
+        <div class="info">
+          <img src="../img/photo_imatsiuk_color.jpg" alt="I. Matsiuk photo" />
+          <p>Iryna Matsiuk</p>
+
+          <div>
+            <p>Location: Heerlen</p>
+            <p>
+              Source:
+              <a
+                href="https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main"
+                target="_blanc"
+                >Github</a
+              >
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar">
+        <nav>
+          <div>
+            <a href="../index.html">About</a>
+            <a href="./courses.html">Courses</a>
+          </div>
+        </nav>
+
+        <div class="filter">
+          <legend>Filter</legend>
+
+          <div class="radios">
+            <div class="radio">
+              <input
+                name="keyword"
+                type="radio"
+                id="allProjects"
+                value=""
+                class="radio-input"
+                checked
+              />
+              <label for="allProjects">All Projects</label> <br />
+            </div>
+
+            <div class="radio">
+              <input
+                name="keyword"
+                type="radio"
+                id="css"
+                value="CSS"
+                class="radio-input"
+              />
+              <label for="css">CSS</label>
+            </div>
+
+            <div class="radio">
+              <input
+                name="keyword"
+                type="radio"
+                id="js"
+                value="JavaScript"
+                class="radio-input"
+              />
+              <label for="js">Vanilla JS</label>
+            </div>
+
+            <div class="radio">
+              <input
+                name="keyword"
+                type="radio"
+                id="react"
+                value="React"
+                class="radio-input"
+              />
+              <label for="react">React</label>
+            </div>
+
+            <div class="radio">
+              <input
+                name="keyword"
+                type="radio"
+                id="jest"
+                value="Jest"
+                class="radio-input"
+              />
+              <label for="jest">Jest</label>
+            </div>
+
+            <div class="radio">
+              <input
+                name="keyword"
+                type="radio"
+                id="sql"
+                value="SQL"
+                class="radio-input"
+              />
+              <label for="sql">SQL</label>
+            </div>
+
+            <div class="radio">
+              <input
+                name="keyword"
+                type="radio"
+                id="cs"
+                value="Computer Science"
+                class="radio-input"
+              />
+              <label for="cs">Computer Science</label>
+            </div>
+
+            <div class="radio">
+              <input
+                name="keyword"
+                type="radio"
+                id="responsive"
+                value="Mobile Responsive"
+                class="radio-input"
+              />
+              <label for="responsive">Mobile Responsive</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <h3>My Projects</h3>
+        <p>
+          Please note, that most of the projects are focused on getting
+          experience and knowledge in specific areas. For example, if the
+          project is about JavaScript, it doesn't have fancy styling and vice
+          versa project with beautiful CSS, doesn't have JavaScript interactions
+        </p>
+        <div class="projects"></div>
+      </div>
+    </div>
+
+    <!-- Template -->
+
+    <template id="project">
+      <div class="project">
+        <h4 class="name"></h4>
+        <p class="details"></p>
+        <div class="description"></div>
+        <div class="course">
+          <p>Course:</p>
+          <p class="course-name"></p>
+        </div>
+        <div class="links">
+          <div class="live-link"></div>
+          <div class="github-link"></div>
+        </div>
+      </div>
+    </template>
+
+    <script src="./projects.js" type="module" defer></script>
+  </body>
+</html>

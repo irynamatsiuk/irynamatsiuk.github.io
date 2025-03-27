@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iryna Matsiuk</title>
+    <link rel="stylesheet" href="sharedStyles.css" />
+    <link rel="stylesheet" href="courses.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="about">
+          <p>
+            These are the cursus I have taken during my learning path. Currently
+            I am on the second part of The Odin Project - Full Stack JavaScript,
+            chapter - React. <br />
+          </p>
+        </div>
+        <div class="info">
+          <img src="../img/photo_imatsiuk_color.jpg" alt="I. Matsiuk photo" />
+          <p>Iryna Matsiuk</p>
+
+          <div>
+            <p>Location: Heerlen</p>
+            <p>
+              Source:
+              <a
+                href="https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main"
+                target="_blanc"
+                >Github</a
+              >
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <div class="sidebar">
+        <nav>
+          <div>
+            <a href="../index.html">About</a>
+            <a href="./projects.html">Projects</a>
+          </div>
+        </nav>
+
+        <div class="certificates">
+          <h5>Certificates</h5>
+          <ul>
+            <li>
+              <a
+                href="https://irynamatsiuk.github.io/certificats/imatsiuk-cfg-js-cert.pdf"
+                target="_blank"
+                >CFG: Intro to JavaScript</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://irynamatsiuk.github.io/certificats/imatsiuk-cfg-webdev-cert.pdf"
+                target="_blank"
+                >CFG: Intro to Web Development</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://irynamatsiuk.github.io/certificats/imatsiuk-cfg-datasql-cert.pdf"
+                target="_blank"
+                >CFG: Intro to Data & SQL</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://irynamatsiuk.github.io/certificats/imatsiuk-coursera-dataanalytics-cert.pdf"
+                target="_blank"
+                >Google Data Analytics</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main">
+        <h3>Courses</h3>
+        <p class="order">from the most recent to the oldest</p>
+        <div class="accordion"></div>
+        <p class="next-courses">
+          Next planned:
+          <br />
+          -
+          <a
+            href="https://www.freecodecamp.org/learn/front-end-development-libraries/"
+            target="_blanc"
+            >Front-End Development Libraries</a
+          >, provided by Free Code Camp,
+          <br />
+          -
+          <a href="https://fullstackopen.com/en/" target="_blanc"
+            >Full Stack Open</a
+          >, provided by University of Helsinki, <br />
+          -
+          <a
+            href="https://pll.harvard.edu/course/cs50-introduction-computer-science"
+            target="_blanc"
+            >CS50: Introduction to Computer Science</a
+          >, provided by Harvard University
+        </p>
+      </div>
+    </div>
+
+    <!-- Template -->
+    <template id="course">
+      <div class="course">
+        <button class="accordion-btn"></button>
+        <div class="course-info">
+          <p class="status"></p>
+          <div class="course-description"></div>
+          <div class="links">
+            <div class="course-project"></div>
+            <div class="course-link"></div>
+            <div class="certificate"></div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <script src="./courses.js" type="module" defer></script>
+  </body>
+</html>

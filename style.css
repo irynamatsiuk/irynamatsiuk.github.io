@@ -1,110 +1,274 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 3.5fr;
-  grid-template-rows: 200px 4fr;
+:root {
+  --dark-red: rgb(99, 56, 56);
+  --mid-red: #9c7474;
+  --grey: rgb(104, 88, 88);
+  --light-grey: rgb(248, 248, 247);
+  --white: white;
+  --beige: antiquewhite;
+  --greyge: rgb(240, 235, 229);
+  --shadow: rgba(165, 161, 145, 0.2);
+  --hover: rgb(201, 158, 64);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
   font-family: Roboto;
-  font-size: 1.1rem;
-  background-color: rgb(248, 247, 247);
-  color: #463f3a;
-}
-
-.sidebar {
-  grid-area: 1 / 1 / -1 / 2;
-  display: flex;
-  flex-direction: column;
-  background-color: #696969;
-  color: rgb(248, 247, 247);
-}
-
-li {
-  list-style: none;
-  padding: 0.4rem 1rem;
-}
-
-.header {
-  grid-area: 1 / 2 / 2 / -1;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  gap: 2rem;
-  padding: 0.5rem;
-  margin: 1rem;
-  border-radius: 2rem;
-  align-items: center;
-}
-
-.about {
-  color: #6d6d6c;
-  font-style: italic;
-  line-height: 2rem;
-  font-size: 1.2rem;
-  padding: 0 2rem;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  font-size: 0.8rem;
-}
-
-.me {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  font-weight: 300;
   font-size: 1rem;
-  font-weight: 500;
 }
 
-img {
-  height: 5rem;
-  width: 5rem;
-  object-fit: cover;
-  border-radius: 5rem;
-}
-
-.main {
-  grid-area: 2 / 2 / -1 / -1;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 0 2rem;
-  font-size: 1rem;
-  border-radius: 0.5rem;
-}
-
-.language {
-  font-size: 0.7rem;
-  font-style: italic;
-}
-
-h2 {
-  grid-area: 1 / 1 / 2 / -1;
-}
-
-.project {
-  border-radius: 1rem;
-  padding: 1rem;
-  background-color: white;
-}
-
-.project > h3 {
-  margin-bottom: -1rem;
-}
-
-a:link {
-  color: #03aaa7;
-}
-
-li > a:link {
-  color: #59e7e5;
+a {
+  font-weight: 350;
+  transition: color 0.5s;
+  color: var(--dark-red);
 }
 
 a:hover {
-  color: #59e7e5;
+  color: var(--hover);
 }
 
-:visited {
-  color: #5da197;
+/* Hero */
+.bgimg-1 {
+  background-image: url(./img/leone-venter-VieM9BdZKFo-unsplash.jpeg);
+  min-height: 100vh;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.name,
+.scroll,
+.about,
+.learning-path,
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.scroll > p {
+  text-align: center;
+  color: rgb(99, 56, 56);
+  animation: 2s change-color infinite alternate;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  color: rgb(69, 32, 32);
+}
+
+.scroll {
+  grid-area: 3 / 1 / 4 / 4;
+}
+
+/* About Me */
+
+.about,
+.learning-path,
+.projects {
+  margin: 0;
+  padding: 10rem 4rem;
+  background-color: var(--greyge);
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about > p,
+.learning-path > p,
+.projects > p {
+  color: var(--grey);
+  line-height: 2.5rem;
+  max-width: 1000px;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: rgb(69, 32, 32);
+  text-align: center;
+}
+
+/* Learning Path */
+
+.bgimg-2 {
+  background-image: url(./img/leone-venter-pVt9j3iWtPM-unsplash.jpeg);
+  min-height: 50vh;
+  align-items: center;
+  justify-content: left;
+}
+
+.bgimg-2 > h2,
+.bgimg-3 > h2 {
+  grid-area: 2 / 3 / 3 / 4;
+  text-align: left;
+}
+
+/* Projects */
+.project-name {
+  font-weight: 400;
+}
+
+.bgimg-3 {
+  background-image: url(./img/nordwood-themes-EZSm8xRjnX0-unsplash.jpeg);
+  min-height: 50vh;
+  align-items: center;
+  justify-content: left;
+}
+
+.projects > .note {
+  color: var(--mid-red);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.bgimg-4 {
+  background-image: url(./img/ben-kolde-FaPxZ88yZrw-unsplash.jpeg);
+  min-height: 100vh;
+  align-items: center;
+}
+
+.bgimg-4 > h2 {
+  grid-area: 2 / 2 / 3 / 3;
+  text-align: center;
+}
+
+.go-up {
+  grid-area: 3 / 2 / -1 / 3;
+  cursor: pointer;
+  justify-self: center;
+}
+
+.pic-author {
+  grid-area: 3 / 1 / -1 / 2;
+  font-size: 0.7rem;
+  color: var(--grey);
+  opacity: 80%;
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+
+.pic-author > a {
+  color: var(--grey);
+  /* align-self: flex-end; */
+}
+
+/* Animation */
+@keyframes change-color {
+  from {
+    color: rgb(73, 24, 24);
+  }
+  to {
+    color: rgb(249, 204, 58);
+  }
+}
+
+/* tablet */
+
+@media (600px < width < 1000px) {
+  h1 {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .about,
+  .learning-path,
+  .projects {
+    min-height: 100vh;
+    padding: 3rem 3rem;
+  }
+  .about > p,
+  .learning-path > p,
+  .projects > p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .bgimg-2 > h2,
+  .bgimg-3 > h2 {
+    grid-area: 2 / 2 / 2 / 4;
+    text-align: right;
+    color: var(--dark-red);
+    text-shadow: 1px 1px 2px var(--light-grey);
+  }
+  .bgimg-3 > h2 {
+    padding-right: 1rem;
+  }
+  .bgimg-4 > h2 {
+    grid-area: 2 / 1 / 3 / -1;
+    text-shadow: 1px 0 10px var(--light-grey);
+  }
+  .projects > .note {
+    font-size: 0.8rem;
+  }
+}
+
+/* mobile */
+
+@media (width <= 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .bgimg-1 {
+    background-position: 75% 50%;
+  }
+  .bgimg-2 {
+    background-position: 20% 50%;
+  }
+  .bgimg-3 {
+    background-position: 90% 50%;
+  }
+  .about,
+  .learning-path,
+  .projects {
+    min-height: 100vh;
+    padding: 2rem;
+  }
+
+  .about > p,
+  .learning-path > p,
+  .projects > p {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+
+  .projects > .note {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+
+  .bgimg-2 > h2,
+  .bgimg-3 > h2,
+  .bgimg-4 > h2 {
+    grid-area: 2 / 1 / 2 / -1;
+    text-shadow: 1px 0 15px var(--light-grey);
+  }
 }

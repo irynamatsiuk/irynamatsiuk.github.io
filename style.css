@@ -67,20 +67,39 @@ a:hover {
   grid-area: 2 / 1 / 3 / 3;
 }
 
-.scroll > p {
-  text-align: center;
+.menu {
+  grid-area: 3 / 1 / 4 / 2;
+  align-self: flex-end;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.menu > div {
+  display: flex;
+  align-items: center;
+}
+
+.menu > div > a {
+  font-weight: 450;
+  cursor: pointer;
+}
+
+.scroll > .material-symbols-outlined {
+  align-self: flex-end;
+  padding-bottom: 1rem;
   color: rgb(99, 56, 56);
   animation: 2s change-color infinite alternate;
 }
 
 h1 {
   font-size: 5rem;
-  font-weight: 300;
+  font-weight: 400;
   color: rgb(69, 32, 32);
 }
 
 .scroll {
-  grid-area: 3 / 1 / 4 / 4;
+  grid-area: 3 / 2 / 4 / 3;
+  align-items: flex-end;
 }
 
 /* About Me */
@@ -157,10 +176,12 @@ h2 {
   text-align: center;
 }
 
-.go-up {
+.up {
   grid-area: 3 / 2 / -1 / 3;
   cursor: pointer;
   justify-self: center;
+  align-self: flex-end;
+  margin-bottom: 1rem;
 }
 
 .pic-author {
@@ -192,7 +213,7 @@ h2 {
 @media (600px < width < 1000px) {
   h1 {
     font-size: 3rem;
-    font-weight: 300;
+    /* font-weight: 400; */
   }
   h2 {
     font-size: 2rem;

@@ -7,7 +7,7 @@
 #### Description:
 
 A responsive homepage.
-Live version: [Homepage](https://irynamatsiuk.github.io/projects/homepage_live/template.html)
+Live version: [Homepage](https://irynamatsiuk.github.io/live/homepage_live/template.html)
 
 #### Assignment:
 

@@ -6,12 +6,7 @@
 
 #### Description:
 
-This project is the second step on the way to learn how to organize code in modules.
-
-Once the app is open first time a user can create new project or add tasks to existing one. In addition user can load few predefined demo tasks to any empty project. All tasks can be marked as 'done' or deleted.
-
-Template tag is used for generating list items in JS.
-
+Once the app is open for the first time a user can create a new project or add tasks to existing one. In addition user can load a few predefined demo tasks to any empty project. All tasks can be marked as 'done' or deleted. Template tag is used for generating list items in JS.
 Local Storage is added to the project in order to save user's data.
 
 Live version: ['Get Shit Done.'](https://irynamatsiuk.github.io/live/todolist_live/template.html)

@@ -1,12 +1,16 @@
 # Project: Homepage
 
-### Curriculum: The Odin Project, Full Stack JavaScript path
+### Course: The Odin Project, Full Stack JavaScript path
 
-### Course: Advanced HTML and CSS Course, chapter: "Responsive Design"
+### Chapter: Advanced HTML and CSS Course, Responsive Design
 
 #### Description:
 
-A responsive homepage.
+A homepage with responsive design and 3 breakpoints:  
+  1. less or equal 600px - for mobile phones,
+  2. between 601 and 999px - for tablets,
+  3. from 1000px - for a normal browser screen.
+     
 Live version: [Homepage](https://irynamatsiuk.github.io/live/homepage_live/template.html)
 
 #### Assignment:

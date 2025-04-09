@@ -9,7 +9,8 @@ export let courses = [
     ],
     project:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/cyclistic",
-    link: "https://www.coursera.org/professional-certificates/google-data-analytics",
+    website:
+      "https://www.coursera.org/professional-certificates/google-data-analytics",
     certificate:
       "https://irynamatsiuk.github.io/certificats/imatsiuk-coursera-dataanalytics-cert.pdf",
   },
@@ -31,7 +32,7 @@ export let courses = [
     ],
     project:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/cyclingolympic",
-    link: "https://codefirstgirls.com/courses/coding-kickstarter/",
+    website: "https://codefirstgirls.com/courses/coding-kickstarter/",
     certificate:
       "https://irynamatsiuk.github.io/certificats/imatsiuk-cfg-datasql-cert.pdf",
   },
@@ -54,7 +55,7 @@ export let courses = [
     ],
     project:
       "https://github.com/Umka-dev/umka-dev.github.io/tree/main?tab=readme-ov-file",
-    link: "https://codefirstgirls.com/courses/coding-kickstarter/",
+    website: "https://codefirstgirls.com/courses/coding-kickstarter/",
     certificate:
       "https://irynamatsiuk.github.io/certificats/imatsiuk-cfg-webdev-cert.pdf",
   },
@@ -74,7 +75,7 @@ export let courses = [
     ],
     project:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/packyourbag",
-    link: "https://codefirstgirls.com/courses/coding-kickstarter/",
+    website: "https://codefirstgirls.com/courses/coding-kickstarter/",
     certificate:
       "https://irynamatsiuk.github.io/certificats/imatsiuk-cfg-js-cert.pdf",
   },
@@ -85,12 +86,12 @@ export let courses = [
     status: "in progress",
     description: [
       "The Odin Project is the 'What I wish I had when I was learning' resource. It pulls the best resources from around the web and compiles them to create a complete curriculum. It’s project-based, meaning students build real-world applications as they learn, and the course provides a comprehensive, structured path from the basics to more advanced concepts.",
-      "First part is 'Foundations', that explains basics of HTML, CSS, JavaScript, Git... Then there are two paths to choose from: Fullstack Ruby on Rails and Fullstack JavaScript. I chose the Full Stack JavaScript path, that maintains a front-end momentum from Foundations by diving into Javascript. After gaining a solid foundation here, next step is a deeper look at front-end design with HTML and CSS before taking JavaScript skills to the server-side with Express and PostgreSQL in NodeJS.",
+      "First part is 'Foundations', that explains basics of HTML, CSS, JavaScript, Git... Then there are two paths to choose from: Full Stack Ruby on Rails and Full Stack JavaScript. I chose the Full Stack JavaScript path, that maintains a front-end momentum from Foundations by diving into Javascript. After gaining a solid foundation here, next step is a deeper look at front-end design with HTML and CSS before taking JavaScript skills to the server-side with Express and PostgreSQL in NodeJS.",
       "I haven't reached the back-end part of the curriculum yet, so I consider more like Front-End opportunities right now.",
       "The Odin Project doesn't provide certificate for course completion, but I hope you will be much more impressed with my personal portfolio of projects.",
     ],
     project: "",
-    link: "https://www.theodinproject.com/",
+    website: "https://www.theodinproject.com/",
     certificate: "",
   },
 ];
@@ -108,7 +109,7 @@ export let courses = [
   ],
   project:
     "",
-  link: "",
+  website: "",
   certificate:
     "",
 },

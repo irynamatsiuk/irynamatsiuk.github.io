@@ -9,14 +9,14 @@ export function createAccordion(courses) {
     const btn = clone.querySelector(".accordion-btn");
     const status = clone.querySelector(".status");
     const description = clone.querySelector(".course-description");
-    const link = clone.querySelector(".course-link");
+    const website = clone.querySelector(".course-website");
     const project = clone.querySelector(".course-project");
     const certificate = clone.querySelector(".certificate");
 
     btn.textContent = course.name;
     status.textContent = course.status;
 
-    link.innerHTML = `<a href=${course.link} target=_"blank">Website</a>`;
+    website.innerHTML = `<a href=${course.website} target=_"blank">Website</a>`;
 
     if (course.certificate != "") {
       certificate.innerHTML = `<a href=${course.certificate} target=_"blank">Certificate</a>`;

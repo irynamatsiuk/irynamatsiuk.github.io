@@ -305,6 +305,21 @@ export let projects = [
     sourceLink:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/memorygame",
   },
+  {
+    id: "shoppingcart",
+    name: "Shopping Cart",
+    details: "React",
+    description: [
+      "'Mock Shop' is a Single Page Application built with React router.",
+      "User can navigate between Home, Shop and Cart tabs.",
+      "Styling is organized in CSS modules.",
+    ],
+    courseName: "Full Stack JavaScript",
+    courseProvider: "The Odin Project",
+    liveLink: "https://imatsiuk-shoppingcart.vercel.app/",
+    sourceLink:
+      "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/shoppingcart",
+  },
 ];
 
 /*

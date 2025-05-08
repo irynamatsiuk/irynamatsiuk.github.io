@@ -1,0 +1,23 @@
+.primaryBg {
+  background-color: rgb(186, 217, 228);
+}
+
+.secondaryBg {
+  background-color: rgb(241, 247, 249);
+}
+
+.tertiaryBg {
+  background-color: white;
+}
+
+.quaternaryBg {
+  background-color: rgb(33, 33, 102);
+}
+
+.primaryCol {
+  color: aliceblue;
+}
+
+.secondaryCol {
+  color: rgb(33, 33, 102);
+}

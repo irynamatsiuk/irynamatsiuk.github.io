@@ -1,0 +1,43 @@
+.cart {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+table {
+  padding: 1rem;
+  width: 1000px;
+  border-collapse: collapse;
+  border: solid 1px rgb(181, 181, 181);
+  border-radius: 3px;
+}
+
+caption {
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+th {
+  padding: 1rem;
+}
+
+td {
+  text-align: center;
+  height: 50px;
+  min-width: 100px;
+  vertical-align: center;
+}
+
+tr {
+  border: solid 1px grey;
+}
+
+.totalPrice {
+  font-weight: 700;
+}
+
+.emptyCart {
+  padding-top: 30vh;
+  text-align: center;
+  line-height: 2rem;
+}

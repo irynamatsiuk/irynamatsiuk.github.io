@@ -1,0 +1,15 @@
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 10vw;
+  composes: secondaryBg from "../colors.module.css";
+}
+
+.loading,
+.error {
+  padding-top: 30vh;
+  font-size: 1.3rem;
+}

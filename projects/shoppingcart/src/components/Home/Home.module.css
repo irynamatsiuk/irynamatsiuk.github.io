@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 10vw;
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: Caveat;
+  text-align: center;
+}
+p {
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+}

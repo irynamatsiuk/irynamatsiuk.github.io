@@ -265,9 +265,9 @@ export let projects = [
     details: "CSS, Mobile Responsive",
     description: [
       "A homepage with responsive design and 3 breakpoints:",
-      " \u00A0 1. less or equal 600px - for mobile phones,",
-      " \u00A0 2. between 601 and 999px - for tablets,",
-      " \u00A0 3. from 1000px - for a normal browser screen.",
+      "  1. less or equal 600px - for mobile phones,",
+      "  2. between 601 and 999px - for tablets,",
+      "  3. from 1000px - for a normal browser screen.",
     ],
     courseName: "Full Stack JavaScript",
     courseProvider: "The Odin Project",
@@ -320,9 +320,28 @@ export let projects = [
     sourceLink:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/shoppingcart",
   },
+  {
+    id: "messageboard",
+    name: "Mini Message Board",
+    details: "NodeJS, Express",
+    description: [
+      "Dynamic message board web application created with backend framework Express.",
+      "User can view and post short text messages, similar to a public message wall or bulletin board.",
+      "Concepts practiced:",
+      "  - setting up an Express server",
+      "  - defining routes (GET and POST)",
+      "  - using controllers to handle form data and to retrieve a message data by their ID",
+      "  - creating and rendering views using EJS template engine",
+    ],
+    courseName: "Full Stack JavaScript",
+    courseProvider: "The Odin Project",
+    liveLink: "",
+    sourceLink:
+      "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/minimassageboard",
+  },
 ];
 
-/*
+/* Template
 {
   id: "",
   name: "",

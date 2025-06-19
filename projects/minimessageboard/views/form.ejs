@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head')%>
+  <body>
+    <div class="container">
+      <%- include('partials/navbar') %>
+      <div class="new-message-form">
+        <h3>New Message</h3>
+        <form method="POST" action="/new">
+          <label for="userName">Name:</label> <br />
+          <input type="text" id="userName" name="userName" /> <br />
+          <label for="messageText">Message:</label> <br />
+          <textarea
+            id="messageText"
+            name="messageText"
+            rows="5"
+            cols="33"
+          ></textarea>
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

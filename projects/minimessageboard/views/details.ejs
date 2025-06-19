@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head')%>
+  <body>
+    <div class="container">
+      <%- include('partials/navbar') %>
+      <ul>
+        <div class="details">
+          <p>User: <%= message.user %>:</p>
+          <p>Date: <%= message.added.toDateString() %></p>
+          <p>ID: <%= message.id %></p>
+          <p>Message: <%= message.text %></p>
+        </div>
+      </ul>
+    </div>
+  </body>
+</html>

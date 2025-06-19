@@ -335,7 +335,7 @@ export let projects = [
     ],
     courseName: "Full Stack JavaScript",
     courseProvider: "The Odin Project",
-    liveLink: "",
+    liveLink: "https://imatsiuk-minimessageboard.onrender.com/",
     sourceLink:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/minimassageboard",
   },

@@ -337,7 +337,7 @@ export let projects = [
     courseProvider: "The Odin Project",
     liveLink: "https://imatsiuk-minimessageboard.onrender.com/",
     sourceLink:
-      "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/minimassageboard",
+      "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/minimessageboard",
   },
 ];
 

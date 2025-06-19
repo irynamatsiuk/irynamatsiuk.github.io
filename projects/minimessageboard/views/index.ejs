@@ -5,7 +5,7 @@
     <div class="container">
       <%- include('partials/navbar') %>
       <ul class="all-messages">
-        <% messages.map((message) => { %>
+        <% messages.toReversed().map((message) => { %>
         <div class="message">
           <p class="user"><%= message.user %>:</p>
           <a href="/<%=message.id%>">

@@ -6,10 +6,10 @@
       <%- include('partials/navbar') %>
       <ul>
         <div class="details">
-          <p>User: <%= message.user %></p>
-          <p>Date: <%= message.added.toDateString() %></p>
-          <p>ID: <%= message.id %></p>
-          <p>Message: <%= message.text %></p>
+          <p>User: <%= singleMessage[0].username %></p>
+          <p>Date: <%= singleMessage[0].date.toDateString() %></p>
+          <p>ID: <%= singleMessage[0].id %></p>
+          <p>Message: <%= singleMessage[0].message %></p>
         </div>
       </ul>
     </div>

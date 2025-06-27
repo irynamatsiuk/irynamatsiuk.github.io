@@ -1,47 +1,48 @@
-const asyncHandler = require("express-async-handler");
-const db = require("../db");
-const messages = db.messages;
+const db = require("../db/queries");
 
-const getMessageBoard = (req, res) => {
+async function getMessages(req, res) {
+  const messages = await db.selectAllMessages();
   res.render("index", {
     title: "Message Board",
     messages: messages,
     link: { href: "/new", text: "+ new message" },
   });
-};
+}
 
-const getForm = (req, res) => {
+async function createMessageGet(req, res) {
   res.render("form", {
     title: "New Message",
     link: { href: "/", text: "back" },
   });
-};
+}
 
-const postMessage = (req, res) => {
-  const newId = messages[messages.length - 1].id + 1;
-  messages.push({
-    id: newId,
-    text: req.body.messageText,
-    user: req.body.userName,
-    added: new Date(),
-  });
+async function createMessagePost(req, res) {
+  const username = req.body.userName;
+  const message = req.body.messageText;
+  const date = new Date();
+  await db.insertMessage(username, message, date);
   res.redirect("/");
-};
+}
 
-const getMessageById = asyncHandler(async (req, res) => {
+async function getMessageById(req, res) {
   const { messageId } = req.params;
-  const message = await db.getMessageById(Number(messageId));
+  const message = await db.selectMessageById(Number(messageId));
 
-  if (!message) {
+  if (message.length === 0) {
     res.render("404", { title: "404", link: { href: "/", text: "back" } });
     return;
   }
 
   res.render("details", {
     title: "Message Details",
-    message: message,
+    singleMessage: message,
     link: { href: "/", text: "back" },
   });
-});
+}
 
-module.exports = { getMessageBoard, getForm, postMessage, getMessageById };
+module.exports = {
+  getMessages,
+  createMessageGet,
+  createMessagePost,
+  getMessageById,
+};

@@ -3,9 +3,9 @@ const router = Router();
 
 const boardController = require("../controllers/boardController");
 
-router.get("/", boardController.getMessageBoard);
-router.get("/new", boardController.getForm);
-router.post("/new", boardController.postMessage);
+router.get("/", boardController.getMessages);
+router.get("/new", boardController.createMessageGet);
+router.post("/new", boardController.createMessagePost);
 router.get("/:messageId", boardController.getMessageById);
 
 module.exports = router;

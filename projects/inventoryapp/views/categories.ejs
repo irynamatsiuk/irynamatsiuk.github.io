@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: title}) %>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+
+      <%- include('partials/nav', { backLink: backLink }) %>
+
+      <ul class="categories-list">
+        <p>List of all categories</p>
+
+        <% categories.map((category) => { %>
+        <li>
+          <%= category.name %>
+          <div class="cat-links">
+            <a href="/wonder/<%= id %>/categories/edit-<%= category.id %>"
+              >Edit</a
+            >
+            <a href="/wonder/<%= id %>/categories/delete-<%= category.id %>"
+              >Delete</a
+            >
+          </div>
+        </li>
+        <% }) %>
+      </ul>
+
+      <form
+        class="newCategory"
+        action="/wonder/<%= id %>/categories"
+        method="POST"
+      >
+        <input type="text" name="newCategory" id="newCategory" required />
+        <button type="submit">Create category</button>
+      </form>
+    </div>
+  </body>
+</html>

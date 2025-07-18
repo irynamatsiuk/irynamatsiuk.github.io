@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: title}) %>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+
+      <%- include('partials/nav', { backLink: backLink }) %>
+
+      <form class="delete-form" action="<%= formAction %>" method="POST">
+        <label for="<%= name %>">
+          <input
+            type="checkbox"
+            id="<%= name %>"
+            name="<%= inputName  %>"
+            value="<%= id %>"
+            required
+          />
+          <span class="checkmark"></span>
+          I am sure I'd like to delete "<%= name %>"
+        </label>
+        <button class="delete-btn" type="submit">Delete</button>
+      </form>
+    </div>
+  </body>
+</html>

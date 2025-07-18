@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', { title: title }) %>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+
+      <%- include('partials/nav', { backLink: backLink }) %>
+
+      <div class="edit-forms">
+        <form action="/wonder/<%= wonderName[0].id %>/edit" method="POST">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value="<%= wonderName[0].name %>"
+            required
+          />
+          <button class="save-btn" type="submit">Save</button>
+        </form>
+
+        <form action="/wonder/<%= wonderName[0].id %>/edit" method="POST">
+          <p>Categories:</p>
+          <div class="checkbox">
+            <% categories.map((category) => { %> <% if
+            (wonderCategories.some((wCategory)=> wCategory.name ===
+            category.name)){%>
+            <label for="<%= category.name %>">
+            <input
+              type="checkbox"
+              id="<%= category.name %>"
+              name="checkedCategories"
+              value="<%= category.id %>"
+              checked
+            />
+            <span class="checkmark"></span><%= category.name %>
+            <% } else { %>
+              <label for="<%= category.name %>">
+            <input
+              type="checkbox"
+              id="<%= category.name %>"
+              name="checkedCategories"
+              value="<%= category.id %>"
+            />
+            <span class="checkmark"></span><%= category.name %>
+            <% } %>
+              </label>
+            <% }) %>
+            <button class="save-btn" type="submit">Save</button>
+          </div>
+        </form>
+
+        <a class="manage-categories"
+          href="/wonder/<%= wonderName[0].id %>/categories">Manage categories</a>
+
+        <form action="/wonder/<%= wonderName[0].id %>/edit" method="POST">
+          <label for="description">Description:</label>
+          <div class="textarea-div">
+            <textarea
+              name="description"
+              id="description"
+              rows="4"
+              placeholder="..."
+              required 
+              ><% if (wonderDescription.length === 0) { %><% } else { %><%= wonderDescription[0].description %><% } %>
+            </textarea>
+            <button class="save-btn" type="submit">Save</button>
+          </div>
+        </form>
+
+        <form action="/wonder/<%= wonderName[0].id %>/edit" method="POST">
+          <label for="country">Country:</label>
+          <select name="country" id="country" required>
+            <option value="" disabled selected value>
+              Choose a country...
+            </option>
+            <% countries.map((country) => { %> <% if (wonderCountry.length != 0
+            && country.name === wonderCountry[0].country) { %>
+            <option value="<%= country.id %>" selected>
+              <%= country.name %>
+            </option>
+            <% } else { %>
+            <option value="<%= country.id %>"><%= country.name %></option>
+            <% }}) %>
+          </select>
+
+          <label for="adress">Location:</label>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="..."
+            value="<% if (wonderAddress.length === 0) { %><% } else { %><%= wonderAddress[0].address %><% } %>"
+            required
+          />
+          <button class="save-btn" type="submit">Save</button>
+        </form>
+
+        <a class="delete-btn" href="/wonder/<%= wonderName[0].id %>/edit/delete %>">Delete</a>
+      </div>
+    </div>
+  </body>
+</html>

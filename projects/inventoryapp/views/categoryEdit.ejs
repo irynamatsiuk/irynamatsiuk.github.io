@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: title}) %>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+
+      <%- include('partials/nav', { backLink: backLink }) %>
+
+      <form
+        class="edit-cat-form"
+        action="/wonder/<%= id %>/categories/edit-<%= categoryId %>"
+        method="POST"
+      >
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          value="<%= categoryName[0].name %>"
+          required
+        />
+        <button class="save-btn" type="submit">Save</button>
+      </form>
+    </div>
+  </body>
+</html>

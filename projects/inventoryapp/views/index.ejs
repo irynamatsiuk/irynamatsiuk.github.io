@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: title}) %>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+
+      <div class="index-menu">
+        <a href="/new">+ New Wonder</a>
+
+        <form class="filter" action="/filter" method="GET">
+          <select name="country" id="country">
+            <option value="allCountries">All countries</option>
+            <% countries.map((country) => { %> <% if (selectedCountry ===
+            country.name ) { %>
+            <option value="<%= country.name %>" selected>
+              <%= country.name %>
+            </option>
+            <% } else { %>
+            <option value="<%= country.name %>"><%= country.name %></option>
+            <% }}) %>
+          </select>
+
+          <select name="category" id="category">
+            <option value="allCategories">All Categories</option>
+            <% categories.map((category) => { %> <% if (selectedCategory ===
+            category.name ) { %>
+            <option value="<%= category.name %>" selected>
+              <%= category.name %>
+            </option>
+            <% } else { %>
+            <option value="<%= category.name %>"><%= category.name %></option>
+            <% }}) %>
+          </select>
+
+          <button type="submit">Show</button>
+        </form>
+      </div>
+
+      <% if (wonders.length === 0) { %>
+      <p class="no-wonder">
+        Unfortunately the is no wonders for this country / category combination
+      </p>
+      <% } else { %>
+      <div class="list">
+        <% wonders.toReversed().map((wonder) => { %>
+        <div class="wonder">
+          <h4><%= wonder.name %></h4>
+          <a href="/wonder/<%= wonder.id %>">Details</a>
+        </div>
+        <% })} %>
+      </div>
+    </div>
+  </body>
+</html>

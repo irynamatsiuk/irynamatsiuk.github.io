@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: title}) %>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+
+      <%- include('partials/nav', {backLink: "/"}) %>
+
+      <div class="wonder-info">
+        <h4><%= wonderName[0].name %></h4>
+
+        <p class="description">
+          <% if (wonderDescription.length === 0) { %> No description yet <% }
+          else { %> <%= wonderDescription[0].description %> <% } %>
+        </p>
+
+        <div class="category">
+          <p>Categories:</p>
+          <% if (wonderCategories.length === 0) { %>
+          <p>No category yet</p>
+          <% } else { %>
+          <ul>
+            <% wonderCategories.map((category) =>{ %>
+            <li><%= category.name %></li>
+            <% }) %>
+          </ul>
+          <% } %>
+        </div>
+
+        <p class="address">
+          Address: <% if (wonderAddress.length === 0) { %> No address yet <% }
+          else { %> <%= wonderAddress[0].address %>, <%=
+          wonderCountry[0].country %> <% } %>
+        </p>
+
+        <a class="edit-wonder-link" href="/wonder/<%=wonderName[0].id %>/edit"
+          >Edit</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

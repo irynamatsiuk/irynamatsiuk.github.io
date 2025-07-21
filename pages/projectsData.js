@@ -343,13 +343,33 @@ export let projects = [
     sourceLink:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/minimessageboard",
   },
+
+  {
+    id: "inventoryapp",
+    name: "Inventory App",
+    details: "NodeJS, Express, SQL",
+    description: [
+      "Dynamic inventory web application created with backend framework Express and relational PostgreSQL database, hosted on neon.com.",
+      "The subject I chose may seem a bit strange (not a shop-like), but my implementation ('Wonders of Europe') still meets all the requirements:",
+      "  - it has categories and items (in my case - wonders),",
+      "  - user can choose a category and/or country to view,",
+      "  - all CRUD methods are avaliable for both items and categories, so anybody that’s visiting the site can Create, Read, Update or Delete any Item (wonder) or Category.",
+      "Also I have done a simple server-side form validation with express-validator for 'Add New Wonder' form. It controls, that  user's input length is between 2 and 50 symbols and removes whitespace from both ends. Other forms don't have server-side validation.",
+      "Note: this app is deployed on render.com and most of the time it takes a while to load the app. Thanks, for your patience.",
+    ],
+    courseName: "Full Stack JavaScript",
+    courseProvider: "The Odin Project",
+    liveLink: "https://imatsiuk-inventoryapp.onrender.com",
+    sourceLink:
+      "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/inventoryapp",
+  },
 ];
 
 /* Template
 {
   id: "",
   name: "",
-  details: "JavaScript",
+  details: "NodeJS, Express, SQL",
   description: [
     "",
     "",

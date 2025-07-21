@@ -34,8 +34,6 @@ async function getFilteredWonders(category, country) {
   return rows;
 }
 
-// SELECT w.name, w.id FROM wonders AS w JOIN wonders_categories AS wc ON w.id=wc.wonder_id JOIN categories AS cat ON wc.category_id=cat.id JOIN locations AS l ON w.id=l.wonder_id JOIN countries AS c ON l.country_id=c.id WHERE c.name='Italy;
-
 async function getAllCategories() {
   const { rows } = await pool.query(`SELECT * from categories`);
   return rows;

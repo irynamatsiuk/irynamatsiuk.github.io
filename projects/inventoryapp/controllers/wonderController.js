@@ -1,12 +1,14 @@
 const db = require("../db/queries");
+const { sortObjectsByName } = require("../utils/sortObjectsByName");
 
 async function wonderInfoGet(req, res) {
   const { id } = req.params;
   const wonderName = await db.getName(id);
   const wonderDescription = await db.getDescription(id);
-  const wonderCategories = await db.getSelectedCategories(id);
+  let wonderCategories = await db.getSelectedCategories(id);
   const wonderAddress = await db.getAddress(id);
   const wonderCountry = await db.getCountry(id);
+  wonderCategories = sortObjectsByName(wonderCategories);
   res.render("wonderInfo", {
     title: "Wonder Info",
     wonderName,
@@ -19,14 +21,16 @@ async function wonderInfoGet(req, res) {
 
 async function wonderEditGet(req, res) {
   const { id } = req.params;
-  const categories = await db.getAllCategories();
-  const countries = await db.getAllCountries();
+  let categories = await db.getAllCategories();
+  let countries = await db.getAllCountries();
   const wonderName = await db.getName(id);
   const wonderDescription = await db.getDescription(id);
   const wonderCategories = await db.getSelectedCategories(id);
   const wonderAddress = await db.getAddress(id);
   const wonderCountry = await db.getCountry(id);
-  const backLink = `/wonder/${wonderName[0].id}`;
+  const backLink = `/wonder/${id}`;
+  countries = sortObjectsByName(countries);
+  categories = sortObjectsByName(categories);
   res.render("wonderEdit", {
     title: "Edit Wonder",
     categories,
@@ -47,6 +51,7 @@ async function wonderEditPost(req, res) {
   const { checkedCategories } = req.body;
   const { country } = req.body;
   const { address } = req.body;
+  const backLink = `/wonder/${id}`;
 
   if (name) {
     await db.updateName(id, name);
@@ -67,13 +72,15 @@ async function wonderEditPost(req, res) {
     await db.updateLocation(id, country, address);
   }
 
-  const categories = await db.getAllCategories();
-  const countries = await db.getAllCountries();
+  let categories = await db.getAllCategories();
+  let countries = await db.getAllCountries();
   const wonderName = await db.getName(id);
   const wonderDescription = await db.getDescription(id);
   const wonderCategories = await db.getSelectedCategories(id);
   const wonderAddress = await db.getAddress(id);
   const wonderCountry = await db.getCountry(id);
+  categories = sortObjectsByName(categories);
+  countries = sortObjectsByName(countries);
 
   res.render("wonderEdit", {
     title: "Edit Wonder",
@@ -84,6 +91,7 @@ async function wonderEditPost(req, res) {
     wonderDescription,
     wonderAddress,
     wonderCountry,
+    backLink,
   });
 }
 

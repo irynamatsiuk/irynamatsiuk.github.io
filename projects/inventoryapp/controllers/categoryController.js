@@ -1,10 +1,12 @@
 const db = require("../db/queries");
 const { capitalizeWords } = require("../utils/capitalizeText");
+const { sortObjectsByName } = require("../utils/sortObjectsByName");
 
 async function addCategoryGet(req, res) {
   const { id } = req.params;
-  const categories = await db.getAllCategories();
   const backLink = `/wonder/${id}/edit`;
+  let categories = await db.getAllCategories();
+  categories = sortObjectsByName(categories);
   res.render("categories", {
     title: "Manage Categories",
     id,

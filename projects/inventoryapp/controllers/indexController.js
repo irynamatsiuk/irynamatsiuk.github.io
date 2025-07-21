@@ -1,10 +1,13 @@
 const db = require("../db/queries");
 const { capitalizeWords } = require("../utils/capitalizeText");
+const { sortObjectsByName } = require("../utils/sortObjectsByName");
 
 async function wondersGet(req, res) {
-  const countries = await db.getAllCountries();
-  const categories = await db.getAllCategories();
+  let countries = await db.getAllCountries();
+  let categories = await db.getAllCategories();
   const wonders = await db.getAllWonders();
+  countries = sortObjectsByName(countries);
+  categories = sortObjectsByName(categories);
   res.render("index", {
     title: "Wonders of Europe",
     wonders,

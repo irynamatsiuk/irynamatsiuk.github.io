@@ -187,6 +187,10 @@ label {
   display: block;
 }
 
+.description {
+  text-align: center;
+}
+
 #name,
 #address {
   display: inline-block;

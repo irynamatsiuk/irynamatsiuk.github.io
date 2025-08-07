@@ -346,7 +346,7 @@ export let projects = [
 
   {
     id: "inventoryapp",
-    name: "Inventory App",
+    name: "Inventory App: 'Wonders of Europe'",
     details: "NodeJS, Express, SQL",
     description: [
       "Dynamic inventory web application created with backend framework Express and relational PostgreSQL database, hosted on neon.com.",
@@ -362,6 +362,31 @@ export let projects = [
     liveLink: "https://imatsiuk-inventoryapp.onrender.com",
     sourceLink:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/inventoryapp",
+  },
+
+  {
+    id: "membersonly",
+    name: "Members Only App: 'Friends'",
+    details: "NodeJS, Express, SQL, SASS, Mobile Responsive",
+    description: [
+      "Full-stack web application built with Express, PostgreSQL, EJS, and SASS, demonstrating secure user authentication, role-based access control, and a server-rendered UI.",
+      "Based on the role users have access to different levels of content and functionality:",
+      "  - guests can view messages without seeing authorship details,",
+      "  - logged-in users can create messages,",
+      "  - members can view full message metadata,",
+      "  - admins can delete any message.",
+      "Try it - create your own user or register Chandler (username: chandlerBing77,	pass: Ch4nB1ng, name: Chandler, last name: Bing). Reset database if needed.",
+      "Users can also change their status by entering a passcode or checking a box. To gain admin privileges, enter the code '4321'.",
+      "Authentication is handled with Passport.js (LocalStrategy), and passwords are securely hashed using bcrypt.",
+      "Express-validator is used to validate and sanitize user input, preventing invalid or malicious data from being submitted via the sign-up form.",
+      "The UI is styled using SASS, compiled into modular CSS and served alongside EJS-rendered views.",
+      "Note: this app is deployed on render.com and most of the time it takes 30 to 60 seconds to load the app. Thanks, for your patience.",
+    ],
+    courseName: "Full Stack JavaScript",
+    courseProvider: "The Odin Project",
+    liveLink: "https://imatsiuk-membersonly.onrender.com/",
+    sourceLink:
+      "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/membersonly",
   },
 ];
 

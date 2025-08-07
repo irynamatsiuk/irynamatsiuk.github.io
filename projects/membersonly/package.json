@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "node app.js",
     "build-css": "sass sass:public/css",
     "watch-css": "sass --watch sass:public/css",
     "dev": "npx sass --watch sass/:public/css/ --verbose & node --watch app.js",

@@ -1,0 +1,33 @@
+<header>
+  <div class="header-container">
+    <h1>
+        <%- include('./logo') %> 
+    </h1>
+
+    <form
+        method="POST"
+        action="/reset-db"
+        class="reset-form"
+        onsubmit="return confirm(`Are you sure you want to reset the database to it's default version?`)"
+      >
+        <button class="reset-button" type="submit">Reset DB</button>
+    </form>
+
+    <nav>
+      <% if (currentUser) {%>
+        <div>
+            <p class="greeting">
+                Welcome back <%= currentUser.f_name %> 
+            </p>
+            <a class="link-status" href="/status">Change your status</a>
+        </div>
+        <a  class ="link-logout" href="/log-out">Log out</a>
+      <% } else {%>
+      <div class="links">
+        <a href="/log-in">Log in</a>
+      </div>
+      <% } %>
+    </nav>
+    
+  </div>
+</header>

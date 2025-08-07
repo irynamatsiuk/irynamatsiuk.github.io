@@ -1,0 +1,78 @@
+@use '../variables' as *;
+@use '../breakpoints' as b;
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 150px;
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.header-container {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem 1rem;
+  width: 100vw;
+  @include b.responsive('md') {
+    width: 85vw;
+  }
+  @include b.responsive('lg') {
+    width: 75vw;
+  }
+  @include b.responsive('xl') {
+    width: 65vw;
+    max-width: 1000px;
+  }
+
+  h1 {
+    grid-area: 1 / 1 / 2 / -1;
+    justify-self: center;
+    font-size: 1.5rem;
+    @include b.responsive('sm') {
+      justify-self: left;
+      font-size: 2rem;
+    }
+    @include b.responsive('lg') {
+      font-size: 2.5rem;
+    }
+    @include b.responsive('xl') {
+      font-size: 3rem;
+    }
+  }
+  .reset-form {
+    grid-area: 2 / 1 / -1 / 2;
+    width: 80px;
+    height: 50px;
+    min-height: 40px;
+    align-self: center;
+    background-color: $color-black;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav {
+    grid-area: 2 / 2 / -1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      .greeting {
+        font-size: 0.9rem;
+      }
+      .link-status {
+        font-size: 0.8rem;
+      }
+    }
+    .link-logout {
+      font-size: 0.8rem;
+      justify-self: end;
+      align-self: end;
+    }
+  }
+}

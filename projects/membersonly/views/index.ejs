@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: title}) %>
+  <body>
+
+    <%- include('partials/header') %> 
+    <main>
+      <%- include('partials/hero') %>   
+         
+      <% if(messages.length > 0) { %>
+        <div class="messages-container">
+          <% messages.toReversed().forEach((m) => { %>
+            <div class="message-card">
+              <%if (currentUser && currentUser.is_member) { %>
+                <p class="message-author">
+                  <%= m.f_name %>
+                  <%= m.l_name %>
+                </p>
+                <p class="message-date">
+                  <%= m.date.toDateString() %>
+                </p>
+              <% } %>
+              <p class="message-title"><%= m.title %></p>
+              <p class="message-text"><%= m.text %></p>
+
+              <%if (currentUser && currentUser.is_admin) { %>
+                <form class="message-delete-form" action="/delete" method="POST">
+                  <button
+                    class="delete-button"
+                    name="messageToDelete"
+                    value="<%= m.message_id %>"
+                    type="submit"
+                    >
+                    Delete
+                  </button>
+                </form>
+              <% } %>
+            </div>
+          <% })%>
+        </div>
+
+      <% } else { %>
+        <div class="zero-messages">
+          <p>No messages yet</p>
+          <% if(currentUser) { %>
+            <div>
+              <p>Be the first one</p> &nbsp; <a href="/new">to share</a>
+            </div>
+          <% } else { %>
+            <div>
+              <p>Please,</p> &nbsp; <a href="/log-in">log in</a> &nbsp; <p>or</p> &nbsp; <a href="/sign-up">sign up</a> &nbsp; <p>to add the first message</p>
+            </div>
+          <% } %>
+        </div>
+      <% } %>
+
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>

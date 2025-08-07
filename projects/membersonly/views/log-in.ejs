@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: title}) %>
+  <body>
+    <%- include('partials/header') %> 
+    <main>
+      <h1>Log In</h1>
+      <% if (failed) { %>
+      <p class="error">Login failed. Please try again.</p>
+      <% } %>
+      <form action="/log-in" method="POST">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" />
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" />
+        <button class="form-button" type="submit">Log In</button>
+      </form>
+
+      <a href="/sign-up">Sign-up</a>
+      <a class="home-link" href="/">Home</a>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>

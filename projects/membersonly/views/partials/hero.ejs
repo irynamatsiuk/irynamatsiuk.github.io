@@ -1,0 +1,11 @@
+<div class="hero">
+  <div>
+    <p>"I'll be there for you..."</p> 
+    <p> and so will your posts!</p>
+  </div>
+  <% if (!currentUser) { %>
+    <a href="/sign-up">Join Now</a>
+  <% } else { %>
+    <a href="/new">Share your thoughts</a>
+  <% } %>
+</div>

@@ -1,0 +1,29 @@
+@use 'sass:color';
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Handlee&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap');
+
+// color palette
+
+$color-black: rgb(17, 17, 17);
+$color-white: rgb(239, 237, 237);
+$color-grey: #a4a2a2;
+$color-grey-mid: #c7c7c7;
+$color-grey-light: rgb(251, 250, 245);
+
+// original friends colors
+$color-red: #9a0006;
+$color-blue: #00009e;
+$color-yellow: #ffdc00;
+
+// adjusted friends colors
+$color-red-light: color.adjust($color-red, $lightness: 33%);
+$color-blue-light: color.adjust($color-blue, $lightness: 33%);
+$color-yellow-light: color.adjust($color-yellow, $lightness: 33%);
+
+// typography
+$font-family-base: 'Open Sans', sans-serif;
+$font-family-logo: 'Caveat', cursive;
+
+$font-weight-bold: 900;
+$border-radius: 5px;

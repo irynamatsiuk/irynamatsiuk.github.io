@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: title}) %>
+  <body>
+    <%- include('partials/header') %> 
+
+    <main>
+      <h1>Change Your Status</h1>
+
+      <% if (locals.showFail) { %>
+        <p class="fail">Wrong code, try again</p>
+      <% } %>
+
+      <% if (locals.showSuccess) { %>
+        <p class="success">Profile updated successfully!</p>
+      <% } %>
+
+
+      <form action="/status" method="POST">
+        <div class="checkbox">
+          <input type="checkbox" name="memberCheckbox" id="memberCheckbox" value="yes"
+            <% if (currentUser.is_member) { %> checked <% } %> 
+          />
+          <label for="memberCheckbox">Member priviliges</label>
+        </div>
+
+        <% if (currentUser.is_admin) { %>
+        <div class="checkbox">
+          <input type="checkbox" name="adminCheckbox" id="adminCheckbox" value="yes" checked />
+          <label for="adminCheckbox">Admin's privileges</label>
+        </div>
+
+        <% } else { %>
+        <div>
+          <label for="admin_code">Enter admin's code:</label>
+          <input id="admin_code" name="admin_code" type="text" />
+        </div>
+        <% } %>
+        <button class="form-button" type="submit">Update</button>
+      </form>
+
+      <a  class="home-link" href="/">Home</a>
+    </main>
+
+    <%- include('partials/footer') %>
+  </body>
+</html>

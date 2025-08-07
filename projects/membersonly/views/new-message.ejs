@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {title: title}) %>
+  <body>
+    <%- include('partials/header') %> 
+    <main>
+    <h1>New Message</h1>
+
+    <form action="/new" method="POST">
+      <label for="title">Title:</label>
+      <input id="title" name="title" type="text" required />
+      <label for="message">Message:</label>
+      <textarea
+        name="message"
+        id="message"
+        rows="4"
+        required
+      ></textarea>
+      <button class="form-button" type="submit">Post</button>
+    </form>
+
+    <a class="home-link" href="/">Home</a>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>

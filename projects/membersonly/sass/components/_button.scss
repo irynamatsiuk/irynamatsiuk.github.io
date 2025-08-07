@@ -1,0 +1,52 @@
+@use '../variables' as *;
+@use '../breakpoints' as b;
+
+@mixin btn($bg-color: $color-black, $color: $color-white) {
+  width: 80px;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  background-color: $bg-color;
+  color: $color;
+  border-radius: $border-radius;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+.form-button {
+  @include btn($color-yellow-light, $color-black);
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 1rem;
+  border: 0.1rem solid $color-grey-mid;
+  &:hover {
+    background-color: $color-red;
+    color: $color-white;
+  }
+}
+
+.reset-button {
+  @include btn($color-yellow-light, $color-black);
+  &:hover {
+    background-color: $color-red;
+    color: $color-white;
+  }
+  @include b.responsive('md') {
+    width: 110px;
+  }
+}
+
+.delete-button {
+  @include btn($color-black, $color-white);
+  margin: 0;
+  &:hover {
+    background-color: $color-red;
+  }
+  @include b.responsive('md') {
+    width: 110px;
+  }
+}

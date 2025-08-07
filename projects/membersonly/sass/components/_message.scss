@@ -1,0 +1,86 @@
+@use '../variables' as *;
+@use '../breakpoints' as b;
+
+.message-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 0.2rem;
+  width: 100vw;
+  margin: 0.4rem 0;
+  background-color: $color-white;
+  box-shadow: 5px 3px 3px $color-grey;
+  @include b.responsive('sm') {
+    width: 95vw;
+    gap: 0.3rem;
+    padding: 0.5rem 0;
+  }
+  @include b.responsive('md') {
+    width: 85vw;
+    gap: 0.4rem;
+    border-radius: $border-radius;
+  }
+  @include b.responsive('lg') {
+    width: 75vw;
+    gap: 0.5rem;
+  }
+  @include b.responsive('xl') {
+    width: 65vw;
+    max-width: 1000px;
+    gap: 0.7rem;
+  }
+
+  .message-author {
+    grid-area: 4 / 2 / -1 / -1;
+    font-weight: $font-weight-bold;
+    margin-right: 0.7rem;
+    align-self: center;
+    justify-self: end;
+  }
+
+  .message-date {
+    grid-area: 1 / 2 / 2 / -1;
+    font-style: italic;
+    margin-right: 0.7rem;
+    font-size: 0.8rem;
+    align-self: center;
+    justify-self: end;
+  }
+
+  .message-title {
+    grid-area: 2 / 1 / 3 / -1;
+    font-size: 1.2rem;
+    font-weight: $font-weight-bold;
+    justify-self: center;
+    margin: 0 0.7rem;
+    @include b.responsive('lg') {
+      justify-self: left;
+      font-size: 1.3rem;
+    }
+  }
+  .message-text {
+    grid-area: 3 / 1 / 4 / -1;
+    margin: 0 0.7rem;
+    text-align: justify;
+    @include b.responsive('lg') {
+      font-style: italic;
+    }
+  }
+
+  .message-delete-form {
+    grid-area: 4 / 1 / -1 / 2;
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    margin: 0 0 0.3rem 0.7rem;
+    width: 80px;
+    min-height: 30px;
+    border: none;
+    @include b.responsive('sm') {
+      margin-bottom: 0;
+    }
+    @include b.responsive('md') {
+      width: 110px;
+    }
+  }
+}

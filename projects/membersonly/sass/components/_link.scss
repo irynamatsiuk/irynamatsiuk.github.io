@@ -1,0 +1,41 @@
+@use '../variables' as *;
+
+@mixin link($color: $color-white) {
+  color: $color;
+  text-decoration: none;
+  transition:
+    transform 0.5s ease,
+    color 0.5s ease,
+    text-decoration 0.5s ease;
+}
+
+a {
+  @include link();
+  &:hover {
+    transform: scale(1.1);
+    color: $color-yellow-light;
+    text-decoration: underline;
+  }
+}
+
+main {
+  a {
+    @include link($color-black);
+    transition: transform 0.5s ease;
+    text-decoration: underline;
+    &:hover {
+      transform: scale(1.1);
+      color: $color-black;
+    }
+  }
+}
+
+.hero {
+  a:hover {
+    color: $color-white;
+  }
+}
+
+.home-link {
+  margin-bottom: 1rem;
+}

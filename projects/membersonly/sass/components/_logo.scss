@@ -1,0 +1,17 @@
+@use '../variables' as *;
+
+.logo {
+  font-family: $font-family-logo;
+}
+
+.middotRed {
+  color: $color-red-light;
+}
+
+.middotBlue {
+  color: $color-blue-light;
+}
+
+.middotYellow {
+  color: $color-yellow;
+}

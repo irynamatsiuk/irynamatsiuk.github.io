@@ -1,0 +1,47 @@
+@use '../variables' as *;
+@use '../breakpoints' as b;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 150px;
+  align-items: center;
+  margin-bottom: -1rem;
+  background-color: $color-yellow-light;
+  justify-content: space-around;
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 1rem;
+    p {
+      font-style: italic;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: $font-weight-bold;
+      @include b.responsive('sm') {
+        margin-top: 1rem;
+      }
+      @include b.responsive('md') {
+        font-size: 1.4rem;
+      }
+      @include b.responsive('lg') {
+        font-size: 1.6rem;
+      }
+      @include b.responsive('xl') {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  a {
+    width: 200px;
+    padding: 1rem;
+    background-color: $color-red;
+    color: $color-white;
+    font-size: 1.2rem;
+    border-radius: $border-radius;
+    text-align: center;
+  }
+}

@@ -6,7 +6,7 @@
 
 #### Description:
 
-> Full-stack project built using backend framework **Express**, **PostgreSQL** database, **EJS** templating engine, and **SASS** for styling, implementing user authentication with **Passport.js** (LocalStrategy), validation and sanitization with **Express-validator** and role-based access control.
+Full-stack project built using backend framework **Express**, **PostgreSQL** database, **EJS** templating engine, and **SASS** for styling, implementing user authentication with **Passport.js** (LocalStrategy), validation and sanitization with **Express-validator** and role-based access control.
 
 Live: [Friends](https://imatsiuk-membersonly.onrender.com/)  
 _Note: this app is deployed on [render.com](https://render.com/) and most of the time it takes 30 to 60 seconds to load the app.  
@@ -31,11 +31,11 @@ Thanks, for your patience_
 
 - **Member**
   - Can see message author and publication timestamp
-  - Can upgrade own status to **Admin** or cancel own membership
+  - Can become an **Admin** or leave the membership
 
 - **Admin**
   - Can delete any message
-  - Can upgrade to **Member** status or cancel own **Admin** privilliges
+  - Can become a Member or give up **Admin** privileges.
 
 ### 👥 Try It
 

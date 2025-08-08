@@ -89,6 +89,11 @@ input:checked + label {
   border-top: solid 1px var(--mid-red);
 }
 
+.description > p {
+  margin: 0.5rem 0;
+  line-height: 1.4rem;
+}
+
 .course > p:first-child {
   color: var(--mid-red);
 }
@@ -99,7 +104,10 @@ input:checked + label {
 
 .links {
   display: flex;
-  gap: 1rem;
+}
+
+.live-link {
+  margin-right: 1rem;
 }
 
 /* tablet */

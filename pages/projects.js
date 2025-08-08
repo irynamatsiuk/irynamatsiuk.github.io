@@ -1,6 +1,7 @@
 import { projects } from "./projectsData.js";
+import { filterCategories } from "./projectsFilterData.js";
 
-export function showProjects(projects) {
+function showProjects() {
   const template = document.querySelector("#project");
 
   for (let i = projects.length - 1; i >= 0; i--) {
@@ -34,7 +35,36 @@ export function showProjects(projects) {
   }
 }
 
-showProjects(projects);
+function createFilter() {
+  const radiosDiv = document.querySelector(".radios");
+  const sortedCategories = [...filterCategories].sort((a, b) =>
+    a.value.localeCompare(b.value)
+  );
+
+  sortedCategories.forEach((category) => {
+    const radio = document.createElement("div");
+    radio.className = "radio";
+
+    const input = document.createElement("input");
+    input.className = "radio-input";
+    input.type = "radio";
+    input.name = "keyword";
+    input.id = category.id;
+    input.value = category.id === "allProjects" ? "" : category.value;
+    input.checked = category.id === "allProjects";
+    input.addEventListener("change", () => {
+      const value = input.value;
+      filterProjects(value);
+    });
+
+    const label = document.createElement("label");
+    label.htmlFor = category.id;
+    label.textContent = category.value;
+
+    radio.append(input, label);
+    radiosDiv.appendChild(radio);
+  });
+}
 
 function filterProjects(keyWord) {
   const allProjects = document.querySelectorAll(".project");
@@ -61,10 +91,5 @@ function filterProjects(keyWord) {
   }
 }
 
-const radios = document.querySelectorAll(".radio-input");
-for (const radio of radios) {
-  radio.addEventListener("change", () => {
-    let value = radio.value;
-    filterProjects(value);
-  });
-}
+showProjects();
+createFilter();

@@ -1,4 +1,4 @@
-export let projects = [
+export const projects = [
   {
     id: "cyclistic",
     name: "Cyclistic",
@@ -235,7 +235,7 @@ export let projects = [
   {
     id: "testingpractice",
     name: "Testing Practice",
-    details: "Jest",
+    details: "Testing, Jest",
     description: ["Testing practice with Jest."],
     courseName: "Full Stack JavaScript",
     courseProvider: "The Odin Project",
@@ -246,7 +246,7 @@ export let projects = [
   {
     id: "battleship",
     name: "Battleship Game",
-    details: "JavaScript, Jest",
+    details: "JavaScript, Testing, Jest",
     description: [
       "Battleship game project.",
       "Button 'Start New Game' fills both grids with 5 ships in 5 sizes: from 1 to 5 cells. Missed attacks are marked with light-blue color, succeed attacks are marked with dark red. Once all ships on one of the boards are sunk, a message with game result will be shown.",
@@ -375,11 +375,10 @@ export let projects = [
       "  - logged-in users can create messages,",
       "  - members can view full message metadata,",
       "  - admins can delete any message.",
-      "Try it - create your own user or register Chandler (username: chandlerBing77,	pass: Ch4nB1ng, name: Chandler, last name: Bing). Reset database if needed.",
-      "Users can also change their status by entering a passcode or checking a box. To gain admin privileges, enter the code '4321'.",
+      "Try it: create your own user or register Chandler (username: chandlerBing77,	pass: Ch4nB1ng, name: Chandler, last name: Bing). Reset the database if needed. You can change user's status by entering a passcode or checking a box. To gain admin privileges, enter the code '4321'.",
       "Authentication is handled with Passport.js (LocalStrategy), and passwords are securely hashed using bcrypt.",
       "Express-validator is used to validate and sanitize user input, preventing invalid or malicious data from being submitted via the sign-up form.",
-      "The UI is styled using SASS, compiled into modular CSS and served alongside EJS-rendered views.",
+      "The UI is styled using SASS, compiled into CSS and served alongside EJS-rendered views.",
       "Note: this app is deployed on render.com and most of the time it takes 30 to 60 seconds to load the app. Thanks, for your patience.",
     ],
     courseName: "Full Stack JavaScript",

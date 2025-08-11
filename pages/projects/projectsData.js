@@ -2,7 +2,7 @@ export const projects = [
   {
     id: "cyclistic",
     name: "Cyclistic",
-    details: "SQL",
+    tech: ["SQL"],
     description: [
       "This case study is the part of Google Data Analytics Professional Certificate at Coursera.",
       "Despite being focused on the Data Analysis field, this course gave me basic understanding of SQL, which can be considered as a complementary knowledge for Front-End Developer and must-have for Full Stack Developer",
@@ -16,7 +16,7 @@ export const projects = [
   {
     id: "cyclingolympic",
     name: "Cycling at Olympics",
-    details: "SQL",
+    tech: ["SQL"],
     description: [
       "A course project of an Introduction to Data & SQL Course at CFG.",
       "It reflects all major learning outcomes from the course modules. I created a relational DB of 6 tables about cycling competitions of the 2020 Summer Olympics in Tokyo. I have set Primary and Foreign Key constraints, created a view (using 'join'), stored function, stored procedure and a trigger.",
@@ -31,7 +31,7 @@ export const projects = [
   {
     id: "thenetherlands",
     name: "The Netherlands",
-    details: "CSS, Mobile Responsive",
+    tech: ["CSS", "Mobile Responsive"],
     description: [
       "A course project of an Introduction to Web Development Course at CFG",
       "Our group (4 people) built a simple informative website about The Netherlands. I was resposible for a page about Utrecht and for an events table on the main page",
@@ -47,7 +47,7 @@ export const projects = [
   {
     id: "packyourbag",
     name: "Pack Your Bag",
-    details: "JavaScript",
+    tech: ["JavaScript"],
     description: [
       "A course project of an Introduction to JavaScript Course at CFG.",
       "Our group (2 people) created a web application that assists people to plan their travels, namely it helps to compose packing list, depending on the type of travel you plan.",
@@ -63,7 +63,7 @@ export const projects = [
   {
     id: "rockpaperscissors",
     name: "Rock Paper Scissors",
-    details: "JavaScript",
+    tech: ["JavaScript"],
     description: [
       " A simple game created with JavaScript. No styling provided.",
     ],
@@ -77,7 +77,7 @@ export const projects = [
   {
     id: "sketch",
     name: "Etch-a-sketch",
-    details: "JavaScript",
+    tech: ["JavaScript"],
     description: [
       "A browser version of something between a sketchpad and an Etch-a-Sketch.",
     ],
@@ -90,7 +90,7 @@ export const projects = [
   {
     id: "calculator",
     name: "Calculator",
-    details: "JavaScript",
+    tech: ["JavaScript"],
     description: [
       "An on-screen calculator, created with JavaScript, HTML, and CSS.",
       "Event listeners, event delegation, forEach loop, switch and if...else statement are used for calculation functionality, css flexbox - for layout.",
@@ -105,7 +105,7 @@ export const projects = [
   {
     id: "dashboard",
     name: "Admin Dashboard",
-    details: "CSS",
+    tech: ["CSS"],
     description: [
       "All the dashboard's layout is created with CSS Grid, also Custom Properties and advanced selectors (the child combinator, pseudo-class and pseudo-element) are used for styling.",
       "It's slightly responsive to screen size changes, but doesn't have a mobile version.",
@@ -120,7 +120,7 @@ export const projects = [
   {
     id: "library",
     name: "Library",
-    details: "JavaScript",
+    tech: ["JavaScript"],
     description: [
       "Library's books are objects and stored in an array. User can add new books to the library. Modal dialog is used to let user to input details of a new book: author, title, number of pages, whether it's been read. All books are shown in a table, where user can edit book's status (read / not yet read) or remove a book from the library. All changes in the table make corresponding chages in the array.",
       "This project doesn't have any storage to save the information between page reloads.",
@@ -135,7 +135,7 @@ export const projects = [
   {
     id: "restaurantpage",
     name: "Restaurant Page: 'Holy Cannoly'",
-    details: "JavaScript",
+    tech: ["JavaScript"],
     description: [
       "One page website with dynamically generated content.",
       "The user can change website content by clicking on different 'tabs': Home, Menu or Contact. The code of this project is organized in different JavaScript files - modules: home.js, contact.js and menu.js. They export functions to the entry point - index.js. These functions generate relevant content in DOM. Also Webpack was set up to bundle JavaScript modules and handle non-JavaScript files during bundling.",
@@ -151,7 +151,7 @@ export const projects = [
   {
     id: "todolist",
     name: "To-Do List: 'Get Shit Done.'",
-    details: "JavaScript",
+    tech: ["JavaScript"],
     description: [
       "This project is the second step on the way to learn how to organize code in modules.",
       "Once the app is open first time a user can create new project or add tasks to existing one. In addition user can load few predefined demo tasks to any empty project. All tasks can be marked as 'done' or deleted.",
@@ -167,7 +167,7 @@ export const projects = [
   {
     id: "weatherapp",
     name: "Weather App",
-    details: "JavaScript",
+    tech: ["JavaScript"],
     description: [
       "Simple app, that shows current weather conditions for a chosen location.",
       "User can input location name and units (Celsius or Fahrenheit) and get weather information from Visual Crossing.",
@@ -182,7 +182,7 @@ export const projects = [
   {
     id: "recursion",
     name: "Recursion",
-    details: "Computer Science",
+    tech: ["Computer Science"],
     description: [
       "Four funtions that take a number and return an array containing that many numbers from Fibonacci sequence.",
       "I've used 'for' loop, recursion and combination of these two, also I have used memoization to improve efficiency.",
@@ -196,7 +196,7 @@ export const projects = [
   {
     id: "linkedlist",
     name: "Linked Lists",
-    details: "Computer Science",
+    tech: ["Computer Science"],
     description: [
       "Custom implementation of a Linked List Data Structure with methods.",
     ],
@@ -209,7 +209,7 @@ export const projects = [
   {
     id: "hashmap",
     name: "HashMap",
-    details: "Computer Science",
+    tech: ["Computer Science"],
     description: [
       "Custom implementation of a HashMap Data Structure with methods.",
     ],
@@ -222,7 +222,7 @@ export const projects = [
   {
     id: "binarysearchtree",
     name: "Binary Search Trees",
-    details: "Computer Science",
+    tech: ["Computer Science"],
     description: [
       "A function that takes an array and builds a balanced Binary Search Tree. It's bread-, depth-first traversals and other functions.",
     ],
@@ -235,7 +235,7 @@ export const projects = [
   {
     id: "testingpractice",
     name: "Testing Practice",
-    details: "Testing, Jest",
+    tech: ["Testing", "Jest"],
     description: ["Testing practice with Jest."],
     courseName: "Full Stack JavaScript",
     courseProvider: "The Odin Project",
@@ -246,7 +246,7 @@ export const projects = [
   {
     id: "battleship",
     name: "Battleship Game",
-    details: "JavaScript, Testing, Jest",
+    tech: ["JavaScript", "Testing", "Jest"],
     description: [
       "Battleship game project.",
       "Button 'Start New Game' fills both grids with 5 ships in 5 sizes: from 1 to 5 cells. Missed attacks are marked with light-blue color, succeed attacks are marked with dark red. Once all ships on one of the boards are sunk, a message with game result will be shown.",
@@ -262,7 +262,7 @@ export const projects = [
   {
     id: "homepage",
     name: "Homepage",
-    details: "CSS, Mobile Responsive",
+    tech: ["CSS", "Mobile Responsive"],
     description: [
       "A homepage with responsive design and 3 breakpoints:",
       "  1. less or equal 600px - for mobile phones,",
@@ -278,7 +278,7 @@ export const projects = [
   {
     id: "cvapplication",
     name: "CV Application",
-    details: "React",
+    tech: ["React"],
     description: [
       "A small application where users can input their information and generate a CV/résumé. A simple project to get started with React, it includes many of the basic concepts without a huge overhead of complexity.",
       "For demonstration purposes initial values were added to input fields (AI generated Homer Simpson information).",
@@ -293,7 +293,7 @@ export const projects = [
   {
     id: "memorygame",
     name: "Memory Gif Game",
-    details: "React",
+    tech: ["React"],
     description: [
       "A game that helps to train your memory.",
       "User need to click on each of 12 gifs, avoiding clicking on the same gif more than once. The program fetches 12 gifs from giphy.com. After each click it randomly shuffles gifs with Fisher–Yates shuffle algorithm.",
@@ -308,7 +308,7 @@ export const projects = [
   {
     id: "shoppingcart",
     name: "Shopping Cart",
-    details: "React",
+    tech: ["React"],
     description: [
       "'Mock Shop' is a Single Page Application built with React router.",
       "User can navigate between Home, Shop and Cart tabs.",
@@ -323,7 +323,7 @@ export const projects = [
   {
     id: "messageboard",
     name: "Mini Message Board",
-    details: "NodeJS, Express, SQL",
+    tech: ["NodeJS", "Express", "SQL"],
     description: [
       "Dynamic message board web application created with backend framework Express.",
       "User can view and post short text messages, similar to a public message wall or bulletin board.",
@@ -347,7 +347,7 @@ export const projects = [
   {
     id: "inventoryapp",
     name: "Inventory App: 'Wonders of Europe'",
-    details: "NodeJS, Express, SQL",
+    tech: ["NodeJS", "Express", "SQL"],
     description: [
       "Dynamic inventory web application created with backend framework Express and relational PostgreSQL database, hosted on neon.com.",
       "The subject I chose may seem a bit strange (not a shop-like), but my implementation ('Wonders of Europe') still meets all the requirements:",
@@ -367,7 +367,7 @@ export const projects = [
   {
     id: "membersonly",
     name: "Members Only App: 'Friends'",
-    details: "NodeJS, Express, SQL, SASS, Mobile Responsive",
+    tech: ["NodeJS", "Express", "SQL", "SASS", "Mobile Responsive", "SASS"],
     description: [
       "Full-stack web application built with Express, PostgreSQL, EJS, and SASS, demonstrating secure user authentication, role-based access control, and a server-rendered UI.",
       "Based on the role users have access to different levels of content and functionality:",
@@ -393,7 +393,7 @@ export const projects = [
 {
   id: "",
   name: "",
-  details: "NodeJS, Express, SQL",
+  tech: ["", "", ""],
   description: [
     "",
     "",

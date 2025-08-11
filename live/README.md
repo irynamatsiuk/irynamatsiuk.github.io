@@ -1,1 +1,1 @@
-Live versions of the projects, created using webpack
+Folder with live versions of the projects, created using webpack

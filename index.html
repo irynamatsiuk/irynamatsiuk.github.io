@@ -3,58 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_down"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down"
     />
     <title>Iryna Matsiuk</title>
   </head>
   <body id="topofpage">
     <div class="bgimg-1">
+      <div class="language">
+        <img
+          class="flag-icon selected"
+          src="https://flagcdn.com/h20/gb.png"
+          srcset="https://flagcdn.com/h40/gb.png 2x"
+          height="20"
+          width="30"
+          alt="English"
+        />
+
+        <a href="/pages/dutch/dutchIndex.html">
+          <img
+            class="flag-icon"
+            src="https://flagcdn.com/h20/nl.png"
+            srcset="https://flagcdn.com/h40/nl.png 2x"
+            height="20"
+            width="30"
+            alt="Nederlands"
+          />
+        </a>
+      </div>
       <div class="name">
         <h1>Iryna Matsiuk</h1>
       </div>
       <div class="menu">
         <div>
           <img
-            src="./img/icons/arrow_right_alt_24dp_633838_FILL0_wght400_GRAD0_opsz24.svg"
+            src="./assets/icons/arrow_right_alt_24dp_633838_FILL0_wght400_GRAD0_opsz24.svg"
             alt="keyboard forward"
           />
-          <a href="./pages/projects.html">Projects</a>
+          <a href="./pages/projects/projects.html">Projects</a>
         </div>
         <div>
           <img
-            src="./img/icons/arrow_right_alt_24dp_633838_FILL0_wght400_GRAD0_opsz24.svg"
+            src="./assets/icons/arrow_right_alt_24dp_633838_FILL0_wght400_GRAD0_opsz24.svg"
             alt="keyboard forward"
           />
-          <a href="./pages/courses.html">Courses</a>
+          <a href="./pages/courses/courses.html">Courses</a>
         </div>
       </div>
       <div class="scroll">
-        <span class="material-symbols-outlined">
-          keyboard_double_arrow_down
-        </span>
+        <span class="material-symbols-outlined arrow top"
+          >keyboard_arrow_down</span
+        >
+        <span class="material-symbols-outlined arrow bottom"
+          >keyboard_arrow_down</span
+        >
       </div>
     </div>
 
     <div class="about">
       <h2>About Me</h2>
       <p>
-        Hi, nice to see you here. Before we jump into the technical part I'd
-        like to briefly introduce myself. My name is Iryna and last 1.5 year I
-        am quite into web development.
+        Hi, nice to see you here! First, I’d like to briefly introduce myself.
+        My name is Iryna, and for the past 1.5 years, I’ve been really into web
+        development.
       </p>
       <p>
-        Of course it's not the only interest I have. I also like birds, simple
-        food, 'barefoot' shoes, DIY and hiking. The coolest hike I have done and
-        which I consider as a personal achievement - 200km long coastal hike on
-        Costa Brava, Spain. My dream hike is Tour du Mont Blanc.
+        Of course, that’s not my only interest. I also enjoy birds, simple food,
+        barefoot shoes, and hiking. One of my proudest personal achievements is
+        a 200 km coastal hike along the Costa Brava in Spain. I loved it so much
+        that I actually did it twice!
       </p>
       <p>
-        And lastly - yes, I speak Dutch, obviously not as good as native. I have
-        an accent and here and there I make grammatical mistakes, but with a bit
-        of patience we will understand each other.
+        I’ve been living in the Netherlands for almost 10 years now. After about
+        four years, I successfully completed the integration certification —
+        even though I wasn’t required to. I did it because I felt it was
+        important. For the past three years, I’ve been living in Limburg,
+        enjoying the beautiful hilly landscape.
       </p>
     </div>
 
@@ -64,32 +90,34 @@
 
     <div class="learning-path">
       <p>
-        I had always thought that developers are from another planet. Just like
-        acrobats at Cirque du Soleil, who do impossible things that I can never
-        do.
+        I used to think that developers were from another planet — like acrobats
+        at Cirque du Soleil, doing impossible things I could never imagine
+        myself doing.
       </p>
       <p>
-        This changed when I saw an advertisement for an online course
-        "Introduction to Web Development" from an English project CFG. By that
-        time I had already successfully completed CFG's course 'Introduction to
-        Data & SQL', so I decided to give it a try.
+        That changed when I saw an advertisement for an online course called
+        'Introduction to Web Development' by a UK-based project, Code First
+        Girls (CFG). At that point, I had already successfully completed their
+        'Introduction to Data & SQL' course, so I decided to give this new one a
+        try.
       </p>
       <p>
-        The Web Development course was mostly about html and css, that wasn't
-        too difficult, so I dared to explore this field further and joined
-        'Introduction to JavaScript' course, again from CFG. This is where the
-        easy part ended. I understood that I need something more serious, than
-        introductory course, that just scratches the surface.
+        The Web Development course mainly covered HTML and CSS. It wasn’t too
+        difficult, which gave me the confidence to explore further. So, I joined
+        CFG’s 'Introduction to JavaScript' course. That’s where the easy part
+        ended. I quickly realized that I needed something more in-depth than a
+        basic introductory course — something that went beyond just scratching
+        the surface.
       </p>
       <p>
-        After my research was done, I came to the conclusion that The Odin
-        Project is exactly what I need. Self-paced, project based, with a
-        comprehensive curriculum. I won't lie I had a lot of struggles and
-        frustration in my journey and I still do have a lot! But here I am now
-        grown from absolutely zero knowledge in web development to someone who
-        has done some cool projects! <br />
-        More information about the courses I took
-        <a href="./pages/courses.html">here</a>.
+        After doing some research, I found that The Odin Project was exactly
+        what I was looking for: self-paced, project-based, and with a
+        well-structured, comprehensive curriculum. I won’t lie — the journey has
+        been full of challenges and frustration, and it still is! But here I am,
+        having grown from knowing absolutely nothing about web development to
+        someone who’s built some pretty cool projects (like this one ;-). <br />
+        You can find more information about the courses I’ve taken
+        <a href="./pages/courses/courses.html">here</a>.
       </p>
     </div>
     <div class="bgimg-3">
@@ -97,26 +125,17 @@
     </div>
     <div class="projects">
       <p>
-        The most effective learning happens while building projects, that is why
-        they are strategically placed throughout the curriculum of The Odin
-        Project - the main contributor to my portfolio. <br />
-        You can find all my projects from all courses
-        <a href="./pages/projects.html">here</a> or visit few projects listed
-        below:
+        The most effective learning happens through building projects, which is
+        why projects are strategically placed throughout the curriculum of The
+        Odin Project — the main contributor to my portfolio. <br />
+        You can find all my projects from various courses
+        <a href="./pages/projects/projects.html">here</a>, or take a look at a
+        few highlighted below:
       </p>
       <p>
-        - <span class="project-name">Memo Gif Game</span> - made with React
-        <a href="https://imatsiuk-memorygame.vercel.app/" target="_blank"
-          >Live</a
-        >
-        <a
-          href="https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/memorygame"
-          target="_blank"
-          >Github</a
-        >
-        <br />
-        - <span class="project-name">Homepage</span> - made with css and html,
-        has a responsive design
+        <span class="project-name">Homepage</span> - a responsive app with three
+        breakpoints: mobile, tablet, and desktop. Built using pure CSS, without
+        any frameworks. <br />
         <a
           href="https://irynamatsiuk.github.io/live/homepage_live/template.html"
           target="_blank"
@@ -127,48 +146,73 @@
           target="_blank"
           >Github</a
         >
-        <br />
-        - <span class="project-name">Battleship Game</span> - made with vanilla
-        JavaScript
-        <a
-          href="https://irynamatsiuk.github.io/live/battleship_live/template.html"
-          target="_blank"
+      </p>
+      <p>
+        <span class="project-name">Shopping Cart</span> - a single-page
+        application built with React Router. The user can navigate between Home,
+        Shop, and Cart tabs, and can add or remove items from the cart. Styling
+        is done using CSS Modules. <br />
+        <a href="https://imatsiuk-shoppingcart.vercel.app/" target="_blank"
           >Live</a
         >
         <a
-          href="https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/battleship"
+          href="https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/shoppingcart"
           target="_blank"
           >Github</a
         >
+      </p>
+      <p>
+        <span class="project-name">Members Only App: 'Friends'</span> - a
+        full-stack web application built with Express, PostgreSQL, EJS, and SASS
+        for styling and responsiveness. For more details about this project,
+        please check the README file on GitHub.<br />
+        This is my most recent project, currently I’m only halfway through the
+        NodeJS section of the course — so there’s still a lot to learn,
+        including Prisma ORM, APIs, and more.
         <br />
-        - <span class="project-name">To-Do List 'Get Shit Done'</span> - made
-        with vanilla JavaScript
-        <a
-          href="https://irynamatsiuk.github.io/live/todolist_live/template.html"
-          target="_blank"
+        The app is deployed on Render.com and may take 30–60 seconds to load.
+        Thanks for your patience! <br />
+        <a href="https://imatsiuk-membersonly.onrender.com/" target="_blank"
           >Live</a
         >
         <a
-          href="https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/todolist"
+          href="https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/membersonly"
           target="_blank"
           >Github</a
         >
       </p>
       <p class="note">
-        Please note, that most of the projects are focused on getting experience
-        and knowledge in specific areas. <br />
-        For example, if the project is about JavaScript, it doesn't have fancy
-        styling and vice versa project with beautiful CSS, doesn't have
-        JavaScript interactions.
+        Most of my projects are focused on building experience in specific
+        areas. For example, if a project is centered around learning JavaScript,
+        it might not have advanced styling. And vice versa — projects with
+        detailed CSS work may not include much JavaScript interaction.
       </p>
     </div>
     <div class="bgimg-4">
       <h2>Thanks for your time</h2>
-      <a href="#topofpage" class="up"
-        ><img
-          src="./img/icons/arrow_upward_24dp_633838_FILL0_wght400_GRAD0_opsz24.svg"
-          alt="Arrow up"
-      /></a>
+
+      <div class="menu-down">
+        <a href="#topofpage" class="up"
+          ><img
+            src="./assets/icons/arrow_upward_24dp_633838_FILL0_wght400_GRAD0_opsz24.svg"
+            alt="Arrow up"
+          />Up</a
+        >
+        <div>
+          <img
+            src="./assets/icons/arrow_right_alt_24dp_633838_FILL0_wght400_GRAD0_opsz24.svg"
+            alt="keyboard forward"
+          />
+          <a href="./pages/projects/projects.html">Projects</a>
+        </div>
+        <div>
+          <img
+            src="./assets/icons/arrow_right_alt_24dp_633838_FILL0_wght400_GRAD0_opsz24.svg"
+            alt="keyboard forward"
+          />
+          <a href="./pages/courses/courses.html">Courses</a>
+        </div>
+      </div>
 
       <div class="pic-author">
         Photos by <br />
@@ -189,7 +233,5 @@
         >
       </div>
     </div>
-
-    <script src="script.js" type="module" defer></script>
   </body>
 </html>

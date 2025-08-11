@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-:root {
-  --dark-red: rgb(99, 56, 56);
-  --mid-red: #9c7474;
-  --grey: rgb(104, 88, 88);
-  --light-grey: rgb(248, 248, 247);
-  --white: white;
-  --beige: antiquewhite;
-  --shadow: rgba(165, 161, 145, 0.2);
-  --hover: rgb(201, 158, 64);
-}
+@import url("/styles/variables.css");
 
 /* Sidebar */
 .filter {
@@ -82,7 +72,7 @@ input:checked + label {
   background-color: var(--white);
 }
 
-.details {
+.tech {
   font-size: 0.8rem;
   font-style: italic;
   text-align: right;

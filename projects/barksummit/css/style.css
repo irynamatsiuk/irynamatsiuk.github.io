@@ -1,0 +1,36 @@
+/* Change bootstrap's default styles for accordion */
+.accordion-button:not(.collapsed) {
+  background-color: #ffc107;
+  color: white;
+  font-weight: 700;
+}
+
+.accordion-button.collapsed:hover {
+  background-color: #ffc107;
+  color: white;
+  font-weight: 700;
+}
+
+.accordion-button::after {
+  background-image: none;
+  content: "▼";
+  font-size: 1rem;
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+  color: black;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  color: white;
+  transform: rotate(180deg);
+}
+
+.carousel-caption > * {
+  text-shadow: black 1px 1px 2px;
+}
+
+/* Add a new class, that doesn't exist in Bootstrap */
+.text-justify {
+  text-align: justify;
+}

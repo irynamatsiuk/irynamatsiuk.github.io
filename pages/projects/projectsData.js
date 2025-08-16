@@ -387,6 +387,20 @@ export const projects = [
     sourceLink:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/membersonly",
   },
+  {
+    id: "barksummit",
+    name: "Bark Summit",
+    tech: ["Bootstrap 5", "Mobile Responsive"],
+    description: [
+      "Fictional event website created as a personal learning project to gain first-hand experience with Bootstrap 5.",
+      "The main focus was exploring how to structure and build a responsive website using Bootstrap's layout system, components, and utilities.",
+    ],
+    courseName: "no specific course",
+    courseProvider: "Bootstrap 5 Docs",
+    liveLink: "https://irynamatsiuk.github.io/projects/barksummit/index.html",
+    sourceLink:
+      "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/barksummit",
+  },
 ];
 
 /* Template

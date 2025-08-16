@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((data) => {
         el.innerHTML = data;
 
-        // Initialize Bootstrap carousel manually after dynamic content is loaded
+        // Initialize Bootstrap carousel manually after content is loaded
         if (file.includes("adopted")) {
           const carouselEl = document.getElementById("carouselCaptions");
           if (carouselEl) {

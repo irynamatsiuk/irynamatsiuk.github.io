@@ -7,8 +7,12 @@
 #### Description:
 
 Battleship game project.  
-Button "Start New Game" fills both grids with 5 ships in 5 sizes: from 1 to 5 cells. Missed attacks are marked with light-blue color, succeed attacks are marked with dark red. Once all ships on one of the boards are sunk, a message with game result will be shown.
-Live version: [Battleship game](https://irynamatsiuk.github.io/live/battleship_live/template.html)
+A browser-based implementation of the classic Battleship game, built with vanilla JavaScript.  
+Button "Start New Game" fills both grids with 5 ships in 5 sizes: from 1 to 5 cells.  
+Missed attacks are marked with light-blue color, succeed attacks are marked with dark red.  
+For demo purposes, enemy ships will be colored grey.  
+Once all ships on one of the boards are sunk, a message with game result will be shown.  
+**Live demo**: [Battleship game](https://irynamatsiuk.github.io/live/battleship_live/template.html)
 
 #### Assignment:
 

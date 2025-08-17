@@ -1,4 +1,3 @@
-
 # Project: Battleship
 
 ## Course: The Odin Project, Full Stack JavaScript path
@@ -7,5 +6,8 @@
 
 #### Description:
 
-Live version of Batteleship game project.  
-Full code source: [Github](https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/battleship_webpack) 
+This is the source code for the live demo of the Battleship game project, which was originally built using Webpack.
+
+**Original code source**: [Github](https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/battleship).
+
+**Live demo**: [Battleship Game](https://irynamatsiuk.github.io/live/battleship_live/template.html)

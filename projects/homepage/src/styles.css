@@ -226,7 +226,6 @@ picture > img {
 .email {
   display: flex;
   align-items: center;
-  margin: 0;
 }
 
 .tel > img,
@@ -234,6 +233,11 @@ picture > img {
   height: 1.5rem;
   width: 1.5rem;
   margin: 0;
+}
+
+.info > .icons {
+  width: 100%;
+  justify-content: center;
 }
 
 /* tablet */
@@ -348,10 +352,6 @@ picture > img {
   .info {
     padding: 50px 5vw;
     font-size: 0.8rem;
-  }
-  .info > .icons {
-    width: 100%;
-    justify-content: center;
   }
   .photo {
     max-width: 100vw;

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .container {
@@ -11,13 +11,15 @@ body {
 
 .start {
   display: flex;
-  min-height: 50px;
-  align-items: end;
+  flex-direction: column;
+  min-height: 100px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .start-btn {
   width: 200px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   font-size: 1rem;
   padding: 0.5rem;
@@ -37,7 +39,7 @@ p {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
-  color: rgb(82, 53, 109)
+  color: rgb(82, 53, 109);
 }
 
 .boards {
@@ -72,13 +74,13 @@ p {
   background-color: rgb(181, 215, 244);
 }
 
-.hit, .hidden.attacked {
+.hit,
+.hidden.attacked {
   background-color: rgb(158, 57, 50);
 }
 
-
-/* To unhide computer's ships */
-/* .hidden {
-  background-color: rgb(36, 63, 116);
-} */
-
+/* To unhide computer's ships
+For demo purposes */
+.hidden {
+  background-color: rgb(228, 228, 228);
+}

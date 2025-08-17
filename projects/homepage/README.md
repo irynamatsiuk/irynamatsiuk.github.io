@@ -13,9 +13,15 @@ A homepage with responsive design and 3 breakpoints:
      
 Live version: [Homepage](https://irynamatsiuk.github.io/live/homepage_live/template.html)
 
+#### Project Goals
+
+- Create a fully responsive homepage layout
+- Practice CSS Grid and Flexbox layout techniques
+- Implement a clean, consistent visual style
+
 #### Assignment:
 
-> Similarly to admin dashboard from previous project, you are tasked to build a given design brief. We’re providing a full design in 3 different sizes:
+> You are tasked to build a given design brief. We’re providing a full design in 3 different sizes:
 > [full desktop](https://cdn.statically.io/gh/TheOdinProject/curriculum/fd6d4d2e2abbac4a3bd183bba6b6eaf1548a1458/advanced_html_css/responsive_design/project_personal_portfolio/imgs/portfolio.png),
 > [tablet](https://cdn.statically.io/gh/TheOdinProject/curriculum/1c8b5c739efd263e8cc48703988b18d6e3afe034/advanced_html_css/responsive-design/project_personal_portfolio/imgs/portfolio%20tablet.png),
 > [mobile](https://cdn.statically.io/gh/TheOdinProject/curriculum/1c8b5c739efd263e8cc48703988b18d6e3afe034/advanced_html_css/responsive-design/project_personal_portfolio/imgs/portfolio%20mobile.png).

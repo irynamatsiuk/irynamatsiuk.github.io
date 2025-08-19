@@ -12,7 +12,7 @@ export let courses = [
     website:
       "https://www.coursera.org/professional-certificates/google-data-analytics",
     certificate:
-      "https://irynamatsiuk.github.io/certificats/imatsiuk-coursera-dataanalytics-cert.pdf",
+      "../../assets/certificates/imatsiuk-coursera-dataanalytics-cert.pdf",
   },
   {
     id: "cfgData",
@@ -33,8 +33,7 @@ export let courses = [
     project:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/cyclingolympic",
     website: "https://codefirstgirls.com/courses/coding-kickstarter/",
-    certificate:
-      "https://irynamatsiuk.github.io/certificats/imatsiuk-cfg-datasql-cert.pdf",
+    certificate: "../../assets/certificates/imatsiuk-cfg-datasql-cert.pdf",
   },
   {
     id: "cfgWebdev",
@@ -56,8 +55,7 @@ export let courses = [
     project:
       "https://github.com/Umka-dev/umka-dev.github.io/tree/main?tab=readme-ov-file",
     website: "https://codefirstgirls.com/courses/coding-kickstarter/",
-    certificate:
-      "https://irynamatsiuk.github.io/certificats/imatsiuk-cfg-webdev-cert.pdf",
+    certificate: "../../assets/certificates/imatsiuk-cfg-webdev-cert.pdf",
   },
   {
     id: "cfgJs",
@@ -76,8 +74,7 @@ export let courses = [
     project:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/packyourbag",
     website: "https://codefirstgirls.com/courses/coding-kickstarter/",
-    certificate:
-      "https://irynamatsiuk.github.io/certificats/imatsiuk-cfg-js-cert.pdf",
+    certificate: "../../assets/certificates/imatsiuk-cfg-js-cert.pdf",
   },
 
   {

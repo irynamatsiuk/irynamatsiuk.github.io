@@ -94,10 +94,7 @@ input:checked + label {
 
 .links {
   display: flex;
-}
-
-.live-link {
-  margin-right: 1rem;
+  justify-content: space-between;
 }
 
 /* tablet */

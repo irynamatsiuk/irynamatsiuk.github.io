@@ -145,10 +145,6 @@ input:checked + label {
     text-align: left;
   }
 
-  .links {
-    justify-content: flex-end;
-    padding-right: 1rem;
-  }
   .course {
     font-size: 0.9rem;
     font-style: italic;

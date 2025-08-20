@@ -17,11 +17,11 @@ function renderProjects() {
     ).textContent = `\u00A0 ${project.courseProvider}, ${project.courseName}`;
 
     const githubLink = clone.querySelector(".github-link");
-    githubLink.innerHTML = `<a href="${project.sourceLink}" target="_blank" rel="noopener">GitHub</a>`;
+    githubLink.innerHTML = `<a href="${project.sourceLink}" target="_blank" rel="noopener">GitHub Repo</a>`;
 
     const liveLink = clone.querySelector(".live-link");
     if (project.liveLink) {
-      liveLink.innerHTML = `<a href="${project.liveLink}" target="_blank" rel="noopener">Live</a>`;
+      liveLink.innerHTML = `<a href="${project.liveLink}" target="_blank" rel="noopener">Live Demo</a>`;
     }
 
     const description = clone.querySelector(".description");

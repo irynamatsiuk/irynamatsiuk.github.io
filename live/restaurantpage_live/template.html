@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Google tag -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DGBKJXWZNW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-DGBKJXWZNW");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Holy Cannoly</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <button id="home-btn">Home</button>
-            <button id="menu-btn">Menu</button>
-            <button id="contact-btn">Contact</button>
-        </nav>
+      <nav>
+        <button id="home-btn">Home</button>
+        <button id="menu-btn">Menu</button>
+        <button id="contact-btn">Contact</button>
+      </nav>
     </header>
     <div id="content"></div>
     <script src="index.js" type="module" defer></script>
-</body>
+  </body>
 </html>

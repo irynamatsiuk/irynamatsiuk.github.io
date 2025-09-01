@@ -1,0 +1,81 @@
+<div class="row justify-content-center">
+  <div class="col-10 col-sm-7 col-md-6 col-lg-5 col-xl-4">
+    <h2 class="text-center mb-4">Sign up</h2>
+
+    <% if (locals.errors) {%>
+    <div class="alert alert-danger">
+      <ul class="mb-0">
+        <% errors.forEach(function(error) { %>
+        <li class="text-danger"><%= error.msg %></li>
+        <% }); %>
+      </ul>
+    </div>
+    <% } %>
+
+    <form method="POST" action="/signup">
+      <!-- Username -->
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input
+          type="text"
+          name="username"
+          class="form-control"
+          id="username"
+          value="<%= formData.username || '' %>"
+          required
+        />
+      </div>
+      <!-- Password -->
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <div class="position-relative">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-control"
+            value="<%= formData.password || '' %>"
+            required
+          />
+          <button
+            type="button"
+            class="btn position-absolute end-0 top-50 translate-middle-y me-2 p-0 border-0 bg-transparent eye-icon text-secondary password-visibility"
+          >
+            <i class="bi bi-eye"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Confirm Password -->
+      <div class="mb-4">
+        <label for="confirmPassword" class="form-label">Confirm Password</label>
+        <div class="position-relative">
+          <input
+            class="form-control"
+            id="confirmPassword"
+            name="confirmPassword"
+            type="password"
+            value="<%= formData.confirmPassword || '' %>"
+            required
+          />
+          <button
+            type="button"
+            class="btn position-absolute end-0 top-50 translate-middle-y me-2 p-0 border-0 bg-transparent eye-icon text-secondary confirm-password-visibility"
+          >
+            <i class="bi bi-eye"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Submit button -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Sign up</button>
+      </div>
+    </form>
+
+    <p class="mt-4 text-center">
+      Already have an account? <br />
+      <a href="/login">Login</a>
+    </p>
+  </div>
+</div>
+
+<script src="/js/passwordToggle.js"></script>

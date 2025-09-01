@@ -1,0 +1,23 @@
+<h4 class="text-center mt-5">Upload a file</h4>
+<form
+  method="POST"
+  action="/files/upload"
+  enctype="multipart/form-data"
+  class="row justify-content-center mx-auto col-sm-9 col-md-7 col-lg-6 col-xl-5"
+>
+  <div class="mb-3">
+    <input type="file" name="file" id="file" class="form-control" required />
+  </div>
+  <div class="mb-3">
+    <label>Select folder (optional):</label>
+    <select name="folderId" class="form-select">
+      <option value="">-- no folder --</option>
+      <% folders.forEach(folder => { %>
+      <option value="<%= folder.id %>"><%= folder.name %></option>
+      <% }) %>
+    </select>
+  </div>
+  <div class="text-center">
+    <button type="submit" class="btn btn-primary">Upload</button>
+  </div>
+</form>

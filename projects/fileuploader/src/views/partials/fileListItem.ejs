@@ -1,0 +1,43 @@
+<li class="list-group-item d-flex justify-content-between align-items-start">
+  <div class="d-flex flex-column gap-1">
+    <strong><%= file.name %></strong>
+
+    <div class="d-flex gap-2">
+      <a class="btn btn-link p-0" href="<%= file.url %>" target="_blank"
+        >view</a
+      >
+      <a class="btn btn-link p-0" href="/files/download-<%= file.id %>"
+        >download</a
+      >
+    </div>
+
+    <!-- Move file to folder form -->
+    <form
+      method="POST"
+      action="/files/move-<%= file.id %>?_method=PATCH"
+      class="d-flex align-items-center"
+    >
+      <select name="folderId" class="form-select form-select-sm me-2" required>
+        <option disabled selected value="">Move to folder...</option>
+        <% folders.forEach(folder => { %>
+        <option value="<%= folder.id %>"><%= folder.name %></option>
+        <% }) %>
+      </select>
+      <button type="submit" class="btn btn-sm btn-outline-success">Move</button>
+    </form>
+  </div>
+  <!-- Delete file form -->
+  <form
+    method="POST"
+    action="/files/delete-<%= file.id %>?_method=DELETE"
+    class="mb-auto"
+    onsubmit="return confirm('Are you sure you want to delete this file?');"
+  >
+    <button
+      class="text-danger bg-transparent border-0"
+      aria-label="Delete file"
+    >
+      <i class="bi bi-trash-fill"></i>
+    </button>
+  </form>
+</li>

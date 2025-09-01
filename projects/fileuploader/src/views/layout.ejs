@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag  -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DGBKJXWZNW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-DGBKJXWZNW");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>upld: <%= title %></title>
+    <link rel="icon" href="/icons/upload_file.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body class="d-flex flex-column min-vh-100 m-0">
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 w-100">
+      <div class="container-xl">
+        <p class="navbar-brand p-0 my-0">upld</p>
+        <% if (user) { %>
+        <ul class="navbar-nav d-none d-sm-flex flex-row gap-3 m-2">
+          <li class="nav-item mx-2">
+            <a
+              class="nav-link text-primary text-decoration-underline"
+              href="/folders/recent"
+              >home</a
+            >
+          </li>
+          <li class="nav-item mx-2">
+            <a
+              class="nav-link text-primary text-decoration-underline"
+              href="/folders/all"
+              >my files</a
+            >
+          </li>
+        </ul>
+        <!-- Log out -->
+        <form class="ms-auto" method="POST" action="/logout">
+          <button class="btn btn-outline-danger" type="submit">logout</button>
+        </form>
+        <% } %>
+      </div>
+    </nav>
+
+    <main
+      class="container-xl flex-fill py-2 mx-auto d-flex flex-column justify-content-center"
+    >
+      <%- include(view, locals) %>
+    </main>
+
+    <footer
+      class="p-2 mt-4 d-flex flex-column gap-1 align-items-center justify-content-center bg-light"
+    >
+      <p class="text-center mb-1 small">
+        Made by I. Matsiuk &nbsp;|&nbsp; &copy; 2025
+      </p>
+      <a
+        href="https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/fileuploader"
+        target="_blank"
+        rel="noopener"
+        class="text-black d-flex align-items-center gap-1 text-decoration-none text-decoration-underline"
+        aria-label="View upld project on GitHub"
+      >
+        <i class="bi bi-github" style="font-size: 1rem"></i>
+        GitHub
+      </a>
+    </footer>
+  </body>
+</html>

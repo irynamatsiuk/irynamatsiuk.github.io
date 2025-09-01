@@ -14,7 +14,8 @@ const validateUser = [
         throw new Error("Username is already taken");
       }
       return true;
-    }),
+    })
+    .escape(),
   body("password")
     .trim()
     .isLength({ min: 5, max: 20 })

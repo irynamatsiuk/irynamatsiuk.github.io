@@ -367,7 +367,7 @@ export const projects = [
   {
     id: "membersonly",
     name: "Members Only App: 'Friends'",
-    tech: ["NodeJS", "Express", "SQL", "SASS", "Mobile Responsive", "SASS"],
+    tech: ["NodeJS", "Express", "SQL", "Mobile Responsive", "SASS"],
     description: [
       "Full-stack web application built with Express, PostgreSQL, EJS, and SASS, demonstrating secure user authentication, role-based access control, and a server-rendered UI.",
       "Based on the role users have access to different levels of content and functionality:",
@@ -379,7 +379,7 @@ export const projects = [
       "Authentication is handled with Passport.js (LocalStrategy), and passwords are securely hashed using bcrypt.",
       "Express-validator is used to validate and sanitize user input, preventing invalid or malicious data from being submitted via the sign-up form.",
       "The UI is styled using SASS, compiled into CSS and served alongside EJS-rendered views.",
-      "Note: this app is deployed on render.com and most of the time it takes 30 to 60 seconds to load the app. Thanks, for your patience.",
+      "Note: this app is deployed on render.com and it may take up to 60 seconds to load the app. Thanks, for your patience.",
     ],
     courseName: "Full Stack JavaScript",
     courseProvider: "The Odin Project",
@@ -400,6 +400,30 @@ export const projects = [
     liveLink: "https://irynamatsiuk.github.io/projects/barksummit/index.html",
     sourceLink:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/barksummit",
+  },
+
+  {
+    id: "fileuploader",
+    name: "File Uploader App: 'upld'",
+    tech: ["NodeJS", "Express", "SQL", "Bootstrap", "Mobile Responsive"],
+    description: [
+      "upld is a full-stack file uploader application that allows authenticated users to upload, store, manage, and organize their files into folders.",
+      "This project was my first hands-on experience working with Prisma ORM to model and query a PostgreSQL database.",
+      "The goal was to create a platform where users can:",
+      "  - sign up, log in (via Passport.js),",
+      "  - upload files to Supabase storage (stored per user and folder),",
+      "  - create, rename, and delete folders to organize files,",
+      "  - download or preview uploaded files,",
+      "  - ensure protected routes for authenticated users only,",
+      "  - access the app from any device thanks to a responsive Bootstrap design.",
+      "The project uses server-side rendering with EJS templates and follows MVC pattern. It also features form validation with express-validator, and includes user feedback with friendly error messages and success indicators.",
+      "Note: this app is deployed on render.com and it may take up to 60 seconds to load the app. Thanks, for your patience.",
+    ],
+    courseName: "Full Stack JavaScript",
+    courseProvider: "The Odin Project",
+    liveLink: "https://imatsiuk-fileuploader.onrender.com/",
+    sourceLink:
+      "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/fileuploader",
   },
 ];
 

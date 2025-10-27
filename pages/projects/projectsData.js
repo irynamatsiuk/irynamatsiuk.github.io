@@ -323,7 +323,7 @@ export const projects = [
   {
     id: "messageboard",
     name: "Mini Message Board",
-    tech: ["NodeJS", "Express", "SQL"],
+    tech: ["Express (NodeJS)", "SQL"],
     description: [
       "Dynamic message board web application created with backend framework Express.",
       "User can view and post short text messages, similar to a public message wall or bulletin board.",
@@ -347,7 +347,7 @@ export const projects = [
   {
     id: "inventoryapp",
     name: "Inventory App: 'Wonders of Europe'",
-    tech: ["NodeJS", "Express", "SQL"],
+    tech: ["Express (NodeJS)", "SQL"],
     description: [
       "Dynamic inventory web application created with backend framework Express and relational PostgreSQL database, hosted on neon.com.",
       "The subject I chose may seem a bit strange (not a shop-like), but my implementation ('Wonders of Europe') still meets all the requirements:",
@@ -367,7 +367,7 @@ export const projects = [
   {
     id: "membersonly",
     name: "Members Only App: 'Friends'",
-    tech: ["NodeJS", "Express", "SQL", "Mobile Responsive", "SASS"],
+    tech: ["Express (NodeJS)", "SQL", "Mobile Responsive", "SASS"],
     description: [
       "Full-stack web application built with Express, PostgreSQL, EJS, and SASS, demonstrating secure user authentication, role-based access control, and a server-rendered UI.",
       "Based on the role users have access to different levels of content and functionality:",
@@ -405,7 +405,7 @@ export const projects = [
   {
     id: "fileuploader",
     name: "File Uploader App: 'upld'",
-    tech: ["NodeJS", "Express", "SQL", "Bootstrap 5", "Mobile Responsive"],
+    tech: ["Express (NodeJS)", "SQL", "Bootstrap 5", "Mobile Responsive"],
     description: [
       "upld is a full-stack file uploader application that allows authenticated users to upload, store, manage, and organize their files into folders.",
       "This project was my first hands-on experience working with Prisma ORM to model and query a PostgreSQL database.",

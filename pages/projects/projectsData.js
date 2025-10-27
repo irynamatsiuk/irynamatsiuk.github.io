@@ -405,7 +405,7 @@ export const projects = [
   {
     id: "fileuploader",
     name: "File Uploader App: 'upld'",
-    tech: ["NodeJS", "Express", "SQL", "Bootstrap", "Mobile Responsive"],
+    tech: ["NodeJS", "Express", "SQL", "Bootstrap 5", "Mobile Responsive"],
     description: [
       "upld is a full-stack file uploader application that allows authenticated users to upload, store, manage, and organize their files into folders.",
       "This project was my first hands-on experience working with Prisma ORM to model and query a PostgreSQL database.",

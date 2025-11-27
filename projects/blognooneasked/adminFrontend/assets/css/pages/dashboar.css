@@ -1,0 +1,16 @@
+.toolbar {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 0.5rem 1.5rem;
+  align-items: center;
+  justify-self: flex-start;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

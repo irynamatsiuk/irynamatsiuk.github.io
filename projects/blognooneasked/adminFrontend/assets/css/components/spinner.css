@@ -1,0 +1,31 @@
+#server-wakeup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  justify-self: flex-start;
+  margin-top: 20vh;
+  margin: auto 0;
+}
+
+#server-wakeup p {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 5px solid var(--accent);
+  border-top: 5px solid var(--danger);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  --white: #fff;
+  --grey: rgb(171, 165, 145);
+  --grey-light: rgb(235, 233, 233);
+  --bg: #f4f4f1;
+  --text: #1b1b1b;
+  --accent: #d4af37;
+  --accent-dark: #b38a05;
+  --accent-light: #e8d5a1;
+  --primary: #005f69;
+  --primary-dark: #00474e;
+  --primary-light: #a1d4c8;
+  --danger: #f26100;
+  --danger-dark: #a54302;
+  --danger-light: #fb9d5e;
+  --success: rgb(65, 112, 65);
+  --radius: 5px;
+  --shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}

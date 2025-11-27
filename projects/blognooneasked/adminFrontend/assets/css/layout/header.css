@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  justify-content: center;
+  background: var(--primary);
+  color: var(--white);
+  height: 200px;
+  border-bottom: 5px solid var(--primary-light);
+}
+
+header .container {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+}
+
+.logo {
+  grid-area: 1 / 1 / 2 / 3;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.logo-2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.greeting {
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  align-self: flex-end;
+  line-height: 0.5rem;
+}
+
+.greeting p {
+  color: var(--primary-light);
+  font-size: smaller;
+  text-align: end;
+}

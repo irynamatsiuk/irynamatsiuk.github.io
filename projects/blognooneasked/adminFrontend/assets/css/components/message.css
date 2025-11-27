@@ -1,0 +1,18 @@
+.message {
+  min-height: 40px;
+}
+
+#message-text {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.error {
+  color: var(--danger);
+}
+
+.success {
+  color: var(--success);
+}

@@ -127,8 +127,16 @@ exports.logout = async (req, res) => {
     if (refreshToken) {
       await prisma.refreshToken.deleteMany({ where: { token: refreshToken } });
     }
-    res.clearCookie("token", { path: "/" });
-    res.clearCookie("refreshToken", { path: "/" });
+
+    const cookieOptions = {
+      httpOnly: true,
+      sameSite: "none",
+      secure: process.env.NODE_ENV === "production",
+      path: "/",
+    };
+
+    res.clearCookie("token", cookieOptions);
+    res.clearCookie("refreshToken", cookieOptions);
 
     res.status(200).json({ message: "Logged out" });
   } catch (error) {

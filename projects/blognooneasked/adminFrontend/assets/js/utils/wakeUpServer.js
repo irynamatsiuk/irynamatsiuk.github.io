@@ -11,7 +11,7 @@ export async function wakeUpServer() {
     const user = await getCurrentUser();
     return user || null;
   } finally {
-    clearTimeout(showSpinnerTimeout); // cancel the show of spinner if the server responses faster than 500ms
+    clearTimeout(showSpinnerTimeout); // Cancel showing the spinner if the server responds faster than 500ms
     box?.classList.add("hidden");
   }
 }

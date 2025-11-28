@@ -235,7 +235,7 @@ export const projects = [
   {
     id: "testingpractice",
     name: "Testing Practice",
-    tech: ["Testing", "Jest"],
+    tech: ["Testing"],
     description: ["Testing practice with Jest."],
     courseName: "Full Stack JavaScript",
     courseProvider: "The Odin Project",
@@ -246,7 +246,7 @@ export const projects = [
   {
     id: "battleship",
     name: "Battleship Game",
-    tech: ["JavaScript", "Testing", "Jest"],
+    tech: ["JavaScript", "Testing"],
     description: [
       "Battleship game project.",
       "Button 'Start New Game' fills both grids with 5 ships in 5 sizes: from 1 to 5 cells. Missed attacks are marked with light-blue color, succeed attacks are marked with dark red. Once all ships on one of the boards are sunk, a message with game result will be shown.",
@@ -424,6 +424,29 @@ export const projects = [
     liveLink: "https://imatsiuk-fileuploader.onrender.com/",
     sourceLink:
       "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/fileuploader",
+  },
+
+  {
+    id: "blognooneasked",
+    name: "Blog: No One Asked",
+    tech: ["Express (NodeJS)", "JavaScript", "Mobile Responsive"],
+    description: [
+      "No One Asked is a full-stack blog platform built as three separate applications that work together to create a clean, modular, and scalable architecture:",
+      "  - backend API (Node.js, Express, Prisma ORM (PostgreSQL), JWT stored in cookies),",
+      "  - admin front-end (Vanilla JavaScript + CSS),",
+      "  - public front-end (currently in development).",
+      "The backend handles authentication, post & comment management, input validation and role-restricted access.",
+      "The admin panel provides a simple UI where authenticated admins can create, edit, publish, and delete posts, as well as manage comments.",
+      "The project emphasizes clean separation of concerns, reusable REST API design, and a fully custom admin front-end without frameworks.",
+      "",
+      "Note: this app is deployed on render.com and it may take up to 60 seconds to load the app. Thanks, for your patience.",
+    ],
+    courseName: "Full Stack JavaScript",
+    courseProvider: "The Odin Project",
+    liveLink:
+      "https://irynamatsiuk.github.io/projects/blognooneasked/adminFrontend/index.html",
+    sourceLink:
+      "https://github.com/irynamatsiuk/irynamatsiuk.github.io/tree/main/projects/blognooneasked",
   },
 ];
 
